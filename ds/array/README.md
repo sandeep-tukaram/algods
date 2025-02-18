@@ -26,16 +26,16 @@
     * Empty positions lead to fragmented array. Compaction (background process) will be required to optimize on the performance. (code)
 
 2. due to memory
-a. when does memory allocation happen
-    compile-time(static ?) -> needs exploration. shouldn't apply for interprented languages.
-    runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
-b. error
-    insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
-    The system throws error if memory is insufficient or array is too large. OutOfMemoryError (java).
+    * when does memory allocation happen
+      * compile-time(static ?) -> needs exploration. shouldn't apply for interprented languages.
+      * runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
+    * error
+      * insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
+      * The system throws error if memory is insufficient or array is too large. OutOfMemoryError (java).
 
 3. due to relations
-a. the only way to find an element is to scan or linear search the array. O(n)
-b. there can be duplicates.
+    * the only way to find an element is to scan or linear search the array. O(n)
+    * there can be duplicates.
 
 4. due to functions/api
 a. to insert an element at i, all the valid elements at i and beyond will have to shift right.
