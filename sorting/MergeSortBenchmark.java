@@ -5,6 +5,13 @@ public class MergeSortBenchmark {
         // Test different array sizes
         int[] sizes = {1000, 10000, 100000, 1000000};
         
+        System.out.println("\n\n***** Testing for generated sorted array *****");
+        for (int size : sizes) {
+            // Generate random array
+            Integer[] arr = generateSortedArray(size);
+            test(arr);
+        }
+
         System.out.println("\n\n***** Testing for randomly generated array *****");
         for (int size : sizes) {
             // Generate random array
@@ -12,14 +19,7 @@ public class MergeSortBenchmark {
             test(arr);
         }
 
-        System.out.println("\n\n***** Testing for randomly generated sorted array *****");
-        for (int size : sizes) {
-            // Generate random array
-            Integer[] arr = generateSortedArray(size);
-            test(arr);
-        }
-
-        System.out.println("\n\n***** Testing for randomly generated reverse sorted array *****");
+        System.out.println("\n\n***** Testing for generated reverse sorted array *****");
         for (int size : sizes) {
             // Generate random array
             Integer[] arr = generateReverseSortedArray(size);
