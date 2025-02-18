@@ -8,7 +8,7 @@ a. Components:
     
 
   2. memory/position/location
-      * memory is allocation/reserved.
+      * memory is allocated/reserved.
       * contiguous block of memory.
 
 b. Relations:
