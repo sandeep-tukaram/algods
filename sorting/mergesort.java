@@ -4,6 +4,7 @@ public class mergesort {
         /* 
         Design technique -  split by division.
             Divide an input into two equally sized subproblems. Reuse their solutions.
+            Also popularly known as Divide and Conquer.
         
         This is a recursive approach. Recursion equation 
         T(n) = 2T(n/2)               //  mergeSort(A, start, mid) and mergeSort(A, mid + 1, end)
