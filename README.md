@@ -67,9 +67,9 @@ The big idea is simple. Split a problem into smaller problems (subproblems). Sol
     }
 
 There are many ways to split a problem into subproblems 
-#### incremental
-#### divide
-#### partition
++ incremental
++ divide
++ partition
 
 ### Optimization
 
