@@ -11,7 +11,7 @@
     * contiguous block of memory.
 
 ### b. Relations -
-    * array as a datastructure doesn't employ relations between elements to position them.
+  1. array as a datastructure doesn't employ relations between elements to position them.
 
 ### c. Function/API -
   1. get(i), A[i]
