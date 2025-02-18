@@ -26,7 +26,7 @@ c. Function/API:
     * error
       + Incompatible data type error -> when adding an element with a dataype not compatible with array datatype declaration.
     * performance
-      + Fragmentation -> Empty positions lead to fragmented array.
+      + Fragmentation -> Empty positions lead to fragmented array. 
           Compaction (background process) will be required to optimize on the performance. (code)
 
 3. due to memory:
