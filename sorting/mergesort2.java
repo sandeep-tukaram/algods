@@ -1,11 +1,14 @@
 import java.util.Arrays;
 
 // Improved mergesort - O(n) best case, already sorted array.
+/*
+    Merge sort is nlgn for the best case, i.e. when array is already sorted. 
+
+    This is an attempt to improve this aspect by first checking whether a subproblem is already sorted. 
+    If not, perform merge sort else use the sorted subproblem as it is. 
+ */
 public class mergesort2 {
     /* 
-        Merge sort is nlgn for best case, i.e. when array is already sorted. 
-        This is an attempt to improve this aspect by first checking whether a 
-        subproblem is already sorted and if not perform merge sort else use it as it is.
      */ 
     static <T extends Comparable<T>> void mergeSort(T[] A, int start, int end) {
         // base
@@ -16,11 +19,11 @@ public class mergesort2 {
 
         int mid = (start + end)/2;
         
-        // subproblems
+        // subproblems - O(lgn) best; O(nlgn) worst
         if (!isSorted(A, start, mid)) mergeSort(A, start, mid);
         if (!isSorted(A, mid+1, end)) mergeSort(A, mid + 1, end);
 
-        // merge 
+        // merge - O(n)
         mergesort.merge(A, start, mid, end);
     }
 
@@ -30,7 +33,7 @@ public class mergesort2 {
             2. Incremental approach. T(n) = T(n-1) + O(1) = O(n)
             3. Divide conquer approach  T(n) = 2T(n/2) + O(1) = O(lgn)
         
-        any of the approach is less than nlgn requied for mergeSort.
+        any of the above approach is better than nlgn for mergesort.
     */
     static <T extends Comparable<T>> boolean isSorted(T[] A, int start, int end) {
         if (start == end) return true;
