@@ -62,13 +62,14 @@ When I first read books on algorithms, the design aspect of algorithms at best a
 The big idea is simple. Split a problem into smaller problems (subproblems). Solve the subproblems and reuse their solution to solve the original problem. The general structure of the idea looks like below. 
 
     solve problem  {
-        solve subproblem1 {}, subproblem2 {} ...        // divide
+        solve subproblem1 {}, subproblem2 {} ...        // split/divide
         reuse solutions of all the subproblems.         // combine
     }
 
-#### Divide and Conquer
-Divide and Conquer is a technique that breaks a problem into smaller subproblems, solves each subproblem, and then combines the solutions to solve the original problem.
-
+There are many ways to split a problem into subproblems 
+#### incremental
+#### divide
+#### partition
 
 ### Optimization
 
