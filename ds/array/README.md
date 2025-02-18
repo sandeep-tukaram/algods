@@ -22,8 +22,8 @@
 ## Behavior - performance (time/space), error
 
 1. due to element
-a. Elements have a fixed datatype. Adding an element of incompatible datatype will produce an error.
-b. Empty positions lead to fragmented array. Compaction (background process) will be required to optimize on the performance. (code)
+    * Elements have a fixed datatype. Adding an element of incompatible datatype will produce an error.
+    * Empty positions lead to fragmented array. Compaction (background process) will be required to optimize on the performance. (code)
 
 2. due to memory
 a. when does memory allocation happen
