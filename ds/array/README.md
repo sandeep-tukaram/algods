@@ -1,5 +1,6 @@
 # Structure -> Behavior (Systems Thinking)
 Structure
+
 a. Components
   a1. elements
       datatype -> all elements of an array have the same data type.
