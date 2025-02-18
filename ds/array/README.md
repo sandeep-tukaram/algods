@@ -3,10 +3,12 @@
 
 ### a. Components
   1. elements
+     
     * datatype -> all elements of an array have the same data type.
     * empty -> positions can be unfilled.
 
   3. memory
+     
     * memory is allocation/reserved.
     * contiguous block of memory.
 
