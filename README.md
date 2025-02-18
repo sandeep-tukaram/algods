@@ -38,6 +38,7 @@ RAM model is apparently the simplest model of computer and popular in textbooks.
     + arithmetic instructions - add, subtract, multiply, divide, modulo, floor, ceiling.
     + data movement instructions - load, store, copy.
     + control flow instructions - conditional branch, unconditional branch, function call, return.
+    
 #### Memory
     + unlimited in-memory storage.
     + memory-hierarchy is not considered. No cache, no disk IO etc.
