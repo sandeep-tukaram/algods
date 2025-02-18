@@ -8,7 +8,7 @@
     
 
   2. memory/position/location
-    * memory is allocation/reserved.
+      * memory is allocation/reserved.
       * contiguous block of memory.
 
 ### b. Relations -
