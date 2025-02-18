@@ -41,7 +41,7 @@ A simple framework to understand behavior in algo/DS is to look at the correctne
       + linking multiple fixed size array -> similar to block linked list.
       + in either case, the scheduling of the new array (allocation) is an optimization/tuning problem.
     * error
-      + insufficient memory - memory is insufficient/array is too large. OutOfMemoryError (java).
+      + insufficient memory - heap memory is insufficient/array is too large. OutOfMemoryError (java).
       + index out of bound - if the position of the array is beyond the allocated contiguous memory blocks. i < 0 or i >= n
 
 4. due to relations:
