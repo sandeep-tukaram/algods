@@ -5,7 +5,7 @@ This is a repository to study and implement algorithms and data structures. By s
 ## Algorithms 
     Given a problem specification including input and output relation, an algorithm is a step by step computational instructions to solve the problem. The algorithm must be useful for all instances of the problem. It must be correct. It must be practical meaning efficient. A problem can have multiple algorithms, and the most efficient one is the best. 
 
-    ### Problems
+### Problems
 
     Problem specifies the provided input and the expected output relation in general terms [1]. These computational problems which, as far as I understand,  means solvable by algorithms using a programming language and a computer. 
 
@@ -19,7 +19,7 @@ This is a repository to study and implement algorithms and data structures. By s
     - Matrix problems
     etc.
 
-    ### Solutions
+### Solutions
 
         Input  -->  Algorithm (computational instructions)  -->  Output
 
@@ -29,7 +29,7 @@ This is a repository to study and implement algorithms and data structures. By s
         Input  --->     ------------------------------------               --->  Output
                             Computer (CPU, Memory, etc.)
 
-    ### RAM model
+### RAM model
     RAM model is apparently the simplest model of computer and popular in textbooks. Few pointers on this model. 
     #### CPU
         + a single processor.
@@ -47,11 +47,11 @@ This is a repository to study and implement algorithms and data structures. By s
         + all memory accesses take same amount of time.
     
 
-    ### Efficiency
+### Efficiency
     Algorithms (programs) use computer resources to execute. The resources are time (CPU time) and space (memory). Algorithm's efficiency is measured by time and space. Less usage of CPU  and memory is more efficient. Each problem can have multiple algorithm solutions. For example, sorting can be done by bubble sort, selection sort, insertion sort, merge sort, quick sort, heap sort, etc. For a given instance, some algorithms are more efficient than others, meaning their usage of CPU and Memory is less.
 
-    ### Correctness
-    Correctness of algorithm has to be proven. 
+### Correctness
+    Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
 
 ## Techniques
     When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! an algorithm is born. It took many repeated readings to realize that algorithm are designed using techniques and not magic. 
