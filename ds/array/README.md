@@ -1,7 +1,7 @@
 # Structure -> Behavior (Systems Thinking)
 ## Structure
 
-### a. Components
+a. Components
   1. elements
       * datatype -> all elements of an array have the same data type.
       * empty -> positions can be unfilled.
@@ -11,10 +11,10 @@
       * memory is allocation/reserved.
       * contiguous block of memory.
 
-### b. Relations -
+b. Relations -
   1. array as a datastructure doesn't employ relations between elements to position them.
 
-### c. Function/API -
+c. Function/API -
   1. get(i), A[i]
   2. set(e, i), A[i] = e. Overrides if any at i.
 
