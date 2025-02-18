@@ -38,13 +38,13 @@
     * there can be duplicates.
 
 4. due to functions/api
-a. to insert an element at i, all the valid elements at i and beyond will have to shift right.
-  insert(e, i) -> O(n) worst case (at start).
-  insert(e) -> O(1) best case (at tail). tail < n.
-b. to delete an element at i, all the valid elements at i and beyond will have to shift left.
-  delete(e, i) -> O(n) worst case (at start).
-  delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
-c. insert/delete implementation can vary depending on how one wants to treat a empty element.
-d. error
-    overflow -> when insert(e), tail >= n
-    underflow -> when delete(e), tail <=0
+    * to insert an element at i, all the valid elements at i and beyond will have to shift right.
+      insert(e, i) -> O(n) worst case (at start).
+      insert(e) -> O(1) best case (at tail). tail < n.
+    * to delete an element at i, all the valid elements at i and beyond will have to shift left.
+      delete(e, i) -> O(n) worst case (at start).
+      delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
+    * insert/delete implementation can vary depending on how one wants to treat a empty element.
+    * error
+      overflow -> when insert(e), tail >= n
+      underflow -> when delete(e), tail <=0
