@@ -1,7 +1,7 @@
 # Structure -> Behavior (Systems Thinking)
 ## Structure
 
-a. <u>Components:
+a. Components:
   1. elements
       * datatype -> all elements of an array have the same data type.
       * empty -> positions can be unfilled.
