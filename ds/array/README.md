@@ -27,11 +27,11 @@
 
 2. due to memory
     * when does memory allocation happen
-      * compile-time(static ?) -> TODO. shouldn't apply for interprented languages.
-      * runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
+      + compile-time(static ?) -> TODO. shouldn't apply for interprented languages.
+      + runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
     * error
-      * insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
-      * The system throws error if memory is insufficient or array is too large. OutOfMemoryError (java).
+      + insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
+      + The system throws error if memory is insufficient or array is too large. OutOfMemoryError (java).
 
 3. due to relations
     * the only way to find an element is to scan or linear search the array. O(n)
@@ -39,11 +39,11 @@
 
 4. due to functions/api
     * to insert an element at i, all the valid elements at i and beyond will have to shift right.
-      insert(e, i) -> O(n) worst case (at start).
-      insert(e) -> O(1) best case (at tail). tail < n.
+      + insert(e, i) -> O(n) worst case (at start).
+      + insert(e) -> O(1) best case (at tail). tail < n.
     * to delete an element at i, all the valid elements at i and beyond will have to shift left.
-      delete(e, i) -> O(n) worst case (at start).
-      delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
+      + delete(e, i) -> O(n) worst case (at start).
+      + delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
     * insert/delete implementation can vary depending on how one wants to treat a empty element.
     * error
       + overflow -> when insert(e), tail >= n
