@@ -43,7 +43,7 @@ RAM model is apparently the simplest model of computer and popular in textbooks.
 + unlimited in-memory storage.
 + memory-hierarchy is not considered. No cache, no disk IO etc.
 
-to simplify, take it with a grain of salt.
+#### to simplify, take it with a grain of salt.
 + all instructions take same amount of time. Read -> Cormen discuses whether exponential operation is constant time [1].
 + all memory accesses take same amount of time.
 
@@ -58,11 +58,16 @@ Correctness of algorithm has to be proven. This is usally done using mathematica
 When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! an algorithm is born. It took many repeated readings to realize that algorithm are designed using techniques and not magic. 
 
 
-### Subproblems
-Subproblems are smaller instances of the problem.
+### Subproblems technique
+The big idea is simple. Split a problem into smaller problems (subproblems). Solve the subproblems and reuse their solution to solve the original problem. The general structure of the idea looks like below. 
 
-    ### Divide and Conquer
-    Divide and Conquer is a technique that breaks a problem into smaller subproblems, solves each subproblem, and then combines the solutions to solve the original problem.
+    solve problem  {
+        solve subproblem1 {}, subproblem2 {} ...        // divide
+        reuse solutions of all the subproblems.         // combine
+    }
+
+#### Divide and Conquer
+Divide and Conquer is a technique that breaks a problem into smaller subproblems, solves each subproblem, and then combines the solutions to solve the original problem.
 
 
 ### Optimization
@@ -93,10 +98,6 @@ Data structures are ways to store and organize data in a computer so that it can
 
 ## It's Fundamental ?
 Fundamental means reusable. That computational problems can be solved by
-
-
-
-
 
 
 ## Why MD?
