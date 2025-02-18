@@ -1,7 +1,7 @@
 # Structure -> Behavior (Systems Thinking)
-Structure
+## Structure
 
-a. Components
+### a. Components
   a1. elements
       datatype -> all elements of an array have the same data type.
       empty -> positions can be unfilled.
@@ -10,15 +10,15 @@ a. Components
       memory is allocation/reserved.
       contiguous block of memory.
 
-b. Relations -
+### b. Relations -
    array as a datastructure doesn't employ relations between elements to position them.
 
-c. Function/API -
+### c. Function/API -
   a. get(i), A[i]
   b. set(e, i), A[i] = e. Overrides if any at i.
 
 
-Behavior - performance (time/space), error
+## Behavior - performance (time/space), error
 
 due to element
 a. Elements have a fixed datatype. Adding an element of incompatible datatype will produce an error.
