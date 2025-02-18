@@ -1,2 +1,1 @@
-Insertion sort 
- https://github.com/sandeep-tukaram/algods/blob/2a4c8602b5c1a0722da560b7b1854c6f63f062d4/sorting/insertionsort.java#L15-L30C6
+https://github.com/sandeep-tukaram/algods/blob/2a4c8602b5c1a0722da560b7b1854c6f63f062d4/sorting/insertionsort.java#L15-L30C6
