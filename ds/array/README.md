@@ -10,6 +10,7 @@ a. Components:
   2. memory/position/location
       * memory is allocated/reserved.
       * contiguous block of memory.
+      * fixed/varying size array.
 
 b. Relations:
   1. array as a datastructure doesn't employ relations between elements to position them.
@@ -20,7 +21,9 @@ c. Function/API:
 
 ---
 
-## Behavior - performance (time/space), error
+## Behavior - performance (time and space), error
+Behavior is latent in the structure. In other words, the structure implies behavior, which may or may not be triggered by events. 
+A simple framework to understand behavior in algo/DS is to look at the correctness (or error) and the performance (time and space).
 
 1. due to element:
     * error
@@ -33,8 +36,13 @@ c. Function/API:
     * performance -> when does memory allocation happen 
       + compile-time(static ?) - shouldn't apply for interprented languages.
       + runtime(dynamic)- languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
+    * varying size array - langauges such as Java do not provide inbuilt varying size array. These will have to be custom built.
+      + shadowing or copy-on-write -> copy an array to a bigger sized array.
+      + linking multiple fixed size array -> similar to block linked list.
+      + in either case, the scheduling of the new array (allocation) is an optimization/tuning problem.
     * error
       + insufficient memory - memory is insufficient/array is too large. OutOfMemoryError (java).
+      + index out of bound - if the position of the array is beyond the allocated contiguous memory blocks. i < 0 or i >= n
 
 4. due to relations:
     * performance ->
