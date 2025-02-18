@@ -1,5 +1,8 @@
+Go to [Sorting](sorting/README.md)
+
 # algods
 This is a repository to study and implement algorithms and data structures. By study I mean notes reading books, articles, blogs etc. 
+
 
 
 ## Algorithms 
