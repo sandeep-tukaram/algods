@@ -2,7 +2,7 @@
 This is a repository to study and implement algorithms and data structures. By study I mean notes reading books, articles, blogs etc. 
 
 
-## Algorithms ?
+## Algorithms 
     Given a problem specification including input and output relation, an algorithm is a step by step computational instructions to solve the problem. The algorithm must be useful for all instances of the problem. It must be correct. It must be practical meaning efficient. A problem can have multiple algorithms, and the most efficient one is the best. 
 
     ### Problems
@@ -86,7 +86,7 @@ This is a repository to study and implement algorithms and data structures. By s
     
 
 
-## Data Structures ?
+## Data Structures 
     Data structures are ways to store and organize data in a computer so that it can be used efficiently.
 
 
