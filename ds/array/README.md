@@ -23,7 +23,7 @@ c. Function/API:
 ---
 
 ## Behavior - performance (time and space), error
-Behavior is latent in the structure. In other words, the structure implies behavior, which may or may not be triggered by events. 
+Behavior is latent in the structure. In other words, the structure implies behavior, which may get triggered by events. 
 A simple framework to understand behavior in algo/DS is to look at the correctness (or error) and the performance (time and space).
 
 1. due to element:
