@@ -24,21 +24,21 @@ c. Function/API:
 
 1. due to element:
     * error
-      + Incompatible data type error -> when adding an element with a dataype not compatible with array datatype declaration.
+      + Incompatible data type error - when adding an element with a dataype not compatible with array datatype declaration.
     * performance
-      + Fragmentation -> Empty positions may lead to fragmented array. 
+      + Fragmentation - Empty positions may lead to fragmented array. 
           Compaction optimizes the performance. (code)
 
 3. due to memory:
-    * when does memory allocation happen
-      + compile-time(static ?) -> TODO. shouldn't apply for interprented languages.
-      + runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
+    * performance -> when does memory allocation happen 
+      + compile-time(static ?) - shouldn't apply for interprented languages.
+      + runtime(dynamic)- languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
     * error
-      + insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
-      + The system throws error if memory is insufficient or array is too large. OutOfMemoryError (java).
+      + insufficient memory - memory is insufficient/array is too large. OutOfMemoryError (java).
 
 4. due to relations:
-    * the only way to find an element is to scan or linear search the array. O(n)
+    * performance ->
+       + scan O(n) - the only way to find an element is to scan or linear search the array.
     * there can be duplicates.
 
 5. due to functions/api:
