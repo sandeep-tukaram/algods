@@ -72,33 +72,25 @@ There are few ways to split a problem into subproblems
 + partition
 
 ### Optimization
+Two techniques is what I have come across till now. [1]
++ Greedy approach - optimize every step, leads to globally optimal solution. Proving correctness is a challenge.
++ Dynamic programming - overlapping subproblems
 
-### Dynamic Programming
-Dynamic Programming is a technique that breaks a problem into smaller subproblems, solves each subproblem, and then combines the solutions to solve the original problem.
-
-### Greedy
-Greedy is a technique that makes the best choice at each step.
-
-### Backtracking
-Backtracking is a technique that tries to solve a problem by trying to build a solution incrementally, and abandoning a solution that fails to meet the constraints of the problem.
-
-### Branch and Bound
-Branch and Bound is a technique that tries to solve a problem by trying to build a solution incrementally, and abandoning a solution that fails to meet the constraints of the problem.
-
-### Randomized Algorithms
-Randomized Algorithms are techniques that use randomization to solve problems.
-
-### Amortized Analysis
-Amortized Analysis is a technique to analyze the average performance of an algorithm over a sequence of operations.
-    
-
+### Randomized algorithm
++ Randomized quicksort -> uses randomization to increase the probably of balanced partition.
 
 ## Data Structures 
-Data structures are ways to store and organize data in a computer so that it can be used efficiently.
+Data structure is a way to recognize relations between the elements in a input and take advantage of it. It involves a tradeoff, achieving time efficiency for some of the operations while inefficiency for some of the other operations.
 
+there are plenty of data structures 
++ linear - array, linked list, stack, queue
++ hierarchical - heap, tree variants 
++ dictionaries - hashtable, kv maps 
++ graphs 
+etc.
 
-## It's Fundamental ?
-Fundamental means reusable. That computational problems can be solved by
+## It's Fundamental, why ?
+Something fundamental, for me in simple terms, is reusable in some sense. Algorithm techniques are reusable to wide variety of problems, infact to construct data structures as well. 
 
 
 ## Why MD?
