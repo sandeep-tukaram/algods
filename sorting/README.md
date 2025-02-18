@@ -2,7 +2,7 @@ Benchmarked for mergesort and mergesort2 on personal machine.
 
 Drastic improvement in the time for the best case. While its near same for randomly and reverse sorted test cases.
 
-
+```
 ***** Testing for randomly generated array *****
 Array size: 1000
 MergeSort time: 1.11 ms
@@ -58,3 +58,4 @@ Array size: 1000000
 MergeSort time: 123.99 ms
 MergeSort2 time: 104.32 ms
 --------------------
+```
