@@ -8,8 +8,8 @@
     
 
   2. memory/position/location
-  * memory is allocation/reserved.
-  * contiguous block of memory.
+    * memory is allocation/reserved.
+      * contiguous block of memory.
 
 ### b. Relations -
   1. array as a datastructure doesn't employ relations between elements to position them.
