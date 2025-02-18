@@ -27,7 +27,7 @@
 
 2. due to memory
     * when does memory allocation happen
-      * compile-time(static ?) -> needs exploration. shouldn't apply for interprented languages.
+      * compile-time(static ?) -> TODO. shouldn't apply for interprented languages.
       * runtime(dynamic)-> languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
     * error
       * insufficient memory -> the size of the contiguous block for array is an input parameter for memory allocation.
