@@ -66,7 +66,7 @@ The big idea is simple. Split a problem into smaller problems (subproblems). Sol
         reuse solutions of all the subproblems.         // combine
     }
 
-There are many ways to split a problem into subproblems 
+There are few ways to split a problem into subproblems 
 + incremental
 + divide
 + partition
