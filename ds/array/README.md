@@ -46,5 +46,5 @@
       delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
     * insert/delete implementation can vary depending on how one wants to treat a empty element.
     * error
-      overflow -> when insert(e), tail >= n
-      underflow -> when delete(e), tail <=0
+      + overflow -> when insert(e), tail >= n
+      + underflow -> when delete(e), tail <=0
