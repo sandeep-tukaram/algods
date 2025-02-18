@@ -18,7 +18,7 @@ c. Function/API:
   1. get(i), A[i]
   2. set(e, i), A[i] = e. Overrides if any at i.
 
-
+___
 
 ## Behavior - performance (time/space), error
 
