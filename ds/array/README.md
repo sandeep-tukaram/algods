@@ -2,20 +2,20 @@
 ## Structure
 
 ### a. Components
-  a1. elements
-      datatype -> all elements of an array have the same data type.
-      empty -> positions can be unfilled.
+  1. elements
+    * datatype -> all elements of an array have the same data type.
+    * empty -> positions can be unfilled.
 
-  a2. memory
-      memory is allocation/reserved.
-      contiguous block of memory.
+  2. memory
+    * memory is allocation/reserved.
+    * contiguous block of memory.
 
 ### b. Relations -
-   array as a datastructure doesn't employ relations between elements to position them.
+    * array as a datastructure doesn't employ relations between elements to position them.
 
 ### c. Function/API -
-  a. get(i), A[i]
-  b. set(e, i), A[i] = e. Overrides if any at i.
+  1. get(i), A[i]
+  2. set(e, i), A[i] = e. Overrides if any at i.
 
 
 ## Behavior - performance (time/space), error
