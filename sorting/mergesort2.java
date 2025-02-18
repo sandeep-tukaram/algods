@@ -48,6 +48,4 @@ public class mergesort2 {
         mergeSort(A, 0, A.length-1);            // O(nlgn), O(n) space
         System.out.println(Arrays.toString(A));
     }
-
-
 }
