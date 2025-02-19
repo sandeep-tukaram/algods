@@ -4,17 +4,20 @@ When I first read books on algorithms, the design aspect of algorithms at best a
 
 
 ## Subproblems approach
-The big idea is simple. Split a problem into smaller problems (subproblems). Solve the subproblems and reuse their solution to solve the original problem. The general structure of the idea looks like below. 
+The big idea is simple. Split a problem into smaller subproblems. Derive the solution of the original problem using the solutions to the subproblems' ? 
 
-    solve problem  {
-        solve subproblem1 {}, subproblem2 {} ...        // split/divide
-        reuse solutions of all the subproblems.         // combine
+General pseudocode has a recursive structure.
+```
+    original problem  {
+        solve subproblem1, subproblem2 ...         
+        derive solution to the original problem reusing subproblem solutions.
     }
+```
 
-There are few ways to split a problem into subproblems 
-+ incremental
-+ divide
-+ partition
+Few ways to split a problem (n): 
++ incremental ->  subproblem(n - k) + residue(k). Usually k = 1.
++ divide -> subproblem(n/k). Not all subproblems have to be equal in size though. 
++ partition -> subproblem(k-1) + residue(1) + subproblem(n-k). Residue in this case is referred to as a pivot. There can be multiple such pivots.
 
 ## Optimization
 Two techniques is what I have come across till now. [1]
