@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class mergesort2 {
     /* 
      */ 
-    static <T extends Comparable<T>> void mergeSort(T[] A, int start, int end) {
+    static <T extends Comparable<T>> void sort(T[] A, int start, int end) {
         // base
         if (start == end) {
             return;
@@ -20,15 +20,15 @@ public class mergesort2 {
         int mid = (start + end)/2;
         
         // subproblems - O(lgn) best; O(nlgn) worst
-        if (!is_sorted.divideconquer(A, start, mid)) mergeSort(A, start, mid);
-        if (!is_sorted.divideconquer(A, mid+1, end)) mergeSort(A, mid + 1, end);
+        if (!is_sorted.dividecheck(A, start, mid)) sort(A, start, mid);
+        if (!is_sorted.dividecheck(A, mid+1, end)) sort(A, mid + 1, end);
 
         merge.sortedArrays(A, start, mid, end);
     }
 
     public static void main(String[] args) {
         Integer[] A = {2, 3, 1, 4};
-        mergeSort(A, 0, A.length-1);            // O(nlgn), O(n) space
+        sort(A, 0, A.length-1);            // O(nlgn), O(n) space
         System.out.println(Arrays.toString(A));
     }
 }

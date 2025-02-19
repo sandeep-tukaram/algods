@@ -31,14 +31,14 @@ public class MergeSortBenchmark {
                     // Benchmark mergesort
                     Integer[] arr1 = arr.clone();
                     long startTime = System.nanoTime();
-                    mergesort.mergeSort(arr1, 0, arr.length-1);
+                    mergesort.sort(arr1, 0, arr.length-1);
                     long endTime = System.nanoTime();
                     double duration = (endTime - startTime) / 1_000_000.0;
                     
                     // Benchmark mergesort2
                     Integer[] arr2 = arr.clone();     
                     long startTime2 = System.nanoTime();
-                    mergesort2.mergeSort(arr2, 0, arr.length-1);
+                    mergesort2.sort(arr2, 0, arr.length-1);
                     long endTime2 = System.nanoTime();
                     double duration2 = (endTime2 - startTime2) / 1_000_000.0;
                     

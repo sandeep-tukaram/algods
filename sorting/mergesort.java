@@ -12,7 +12,7 @@ public class mergesort {
 
         T(n) = O(nlgn);
      */ 
-    static <T extends Comparable<T>> void mergeSort(T[] A, int start, int end) {
+    static <T extends Comparable<T>> void sort(T[] A, int start, int end) {
         // base
         if (start == end) {
             return;
@@ -22,8 +22,8 @@ public class mergesort {
         int mid = (start + end)/2;
         
         // subproblems
-        mergeSort(A, start, mid);
-        mergeSort(A, mid + 1, end);
+        sort(A, start, mid);
+        sort(A, mid + 1, end);
 
         merge.sortedArrays(A, start, mid, end);
     }
@@ -31,7 +31,7 @@ public class mergesort {
 
     public static void main(String[] args) {
         Integer[] A = {2, 3, 1, 4};
-        mergeSort(A, 0, A.length-1);            // O(nlgn), O(n) space
+        sort(A, 0, A.length-1);            // O(nlgn), O(n) space
         System.out.println(Arrays.toString(A));
     }
 
