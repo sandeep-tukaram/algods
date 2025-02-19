@@ -4,7 +4,7 @@ public class quicksort {
 
     static <T extends Comparable<T>> void sort(T[] A, int start, int end) {
         if (start < end) {
-            int k = partition.endkey (A, start, end);  
+            int k = partition.byEndKey(A, start, end);  
             sort(A, 0, k-1);
             sort(A, k+1, end);    
         }

@@ -2,7 +2,7 @@ public class partition {
 
     // Design technique -> two pointer, one pivot.
     // O(n)
-    static <T extends Comparable<T>> int endkey(T[] A, int start, int end) {
+    static <T extends Comparable<T>> int byEndKey(T[] A, int start, int end) {
         // pivot
         T key = A[end];
     
