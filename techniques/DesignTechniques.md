@@ -19,7 +19,7 @@ Few ways to split a problem (n):
 + divide -> subproblem(n/k). Not all subproblems have to be equal in size though. 
 + partition -> subproblem(k-1) + residue(1) + subproblem(n-k). Residue in this case is referred to as a pivot. There can be multiple such pivots.
 
-## Optimization
+## Optimization techniques
 Two techniques is what I have come across till now. [1]
 + Greedy approach - optimize every step, leads to globally optimal solution. Proving correctness is a challenge.
 + Dynamic programming - overlapping subproblems
