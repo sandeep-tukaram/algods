@@ -44,7 +44,7 @@ Using a programming language algorithms are implemented and compiled into an exe
 ### Efficiency
 Algorithm's efficiency is measured in time and space. Less usage of CPU  and memory more efficient the algorithm. Each problem can have multiple algorithm solutions. For example, sorting can be done by bubble sort, selection sort, insertion sort, merge sort, quick sort, heap sort, etc. For a given instance, some algorithms are more efficient than others, meaning their usage of CPU and Memory is lesser.
 
-Interestingly one wants to know what's the lower (best case) bound and what's the upper (worst case) bound of resource usage. These are mathematically denoted as \(\Omega\) and \(O\) respectively. \(\Theta\) indicates both upper and lower bounds.
+Interestingly one wants to know what's the lower (best case) bound and what's the upper (worst case) bound of resource usage. These are mathematically denoted as Ω (Omega) and O (Big O) respectively. Θ (Theta) indicates both upper and lower bounds.
 
 ### Correctness
 Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
