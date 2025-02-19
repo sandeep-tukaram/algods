@@ -20,8 +20,11 @@ Put in pseudocode the question is ...
 1. Assume sort(n-k) solves the n-k problem.
 2. Can we sort(n) using sort(n-k) ? 
 3. Take k = 1. sort(n-1) is sorts A[0..n-1], from assumption 1. 
+```
         A[0] <= A[2] <= ... <= A[n-1]   
+```
 4. And to place A[n] in its correct position, simply scan the (n-1) sorted elements. 
+```
     place(A, n):    
         key = A[n]  // key is the nth element we want to place in the sorted A[0 .. n-1]
         i = n-1;
@@ -29,11 +32,12 @@ Put in pseudocode the question is ...
             A[i+1] = A[i];      // shift right all larger elements.  Make place for the key. 
         }
         A[i + 1] = key  // place key in the right position. 
-
-5. sort(A, n) : 
+```
+5. 
+``` sort(A, n) : 
         sort(A, n-1)        // sort the subproblem 
         place (A, n)        // place the n'th element in the solved subproblem.
-    
+``` 
     This is a recursion. T(n) = T(n-1) + O(n) = O(n^2). 
 
 
