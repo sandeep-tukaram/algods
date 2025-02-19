@@ -3,14 +3,13 @@ Go to [Sorting](sorting/docs/README.md)
 Repository contains notes, code etc related to algo and ds. Purpose is mostly self serving - to better understand the space. Hopefully it helps others as well.
 
 ## AlgoDS is fundamental ?
-I will try to stick to one principle - Keep it Simple and Intuitive (KISI). 
-What does fundamental mean? Think reusables, reapplicables. It's crude, but simplifyies understanding AlgoDS. As a developer, reusable is a tangible concept.
+It helps to keep things simple and intuitive. What does fundamental mean in simple terms? Think reusables. It's crude, but simplifyies. As a developer, reusable is a everyday tangible concept.
 
-Two fundamental (reusable) aspects of AlgoDS are: 
+Two reusable aspects of AlgoDS are: 
 + [Design techniques](techniques/DesignTechniques.md)
 + Datastructures
 
-Will structure problem solving based on these fundamentals.
+Mostly every computational problem can be solved using these two reusables. Implicit is that the two constitute an exhaustive list. I would argue so. Think of a program in its basic - instructions and data. Design techniques optimize on reducing the number of instructions to solve a problem. Data structures optimize on access paths by organizing data/elements using the latent relations. 
 
 --- 
 ## Problems
