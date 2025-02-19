@@ -9,7 +9,7 @@ I will try to stick to one principle - Keep it Simple and Intuitive (KISI)
 Based on that principle, I reduce fundamental to mean reusable. It's crude, but simple. Reusable, reapplicable etc is a tangible concept as a developer.
 
 Two fundamental (reusable) aspects of AlgoDS are: 
-+ Design techniques (techniques/DesignTechniques.md)
++ [Design techniques](techniques/DesignTechniques.md)
 + Datastructures
 
 Will structure problem solving based on these fundamentals.
