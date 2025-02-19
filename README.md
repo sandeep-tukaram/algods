@@ -6,9 +6,14 @@ Repository contains notes, code etc related to algo and ds. Purpose is mostly se
 ## AlgoDS is fundamental ?
 Something fundamental is reusable. While copy-paste is often criticized, I believe it's a valuable form of reuse that helps prioritize learning. The key isn't whether to copy-paste, but rather deciding what to copy-paste versus what to deeply understand. This decision helps focus our learning efforts where they matter most.
 
-Algorithm techniques and datastructures are reusable (fundamental). It depends on one's choice to either copy-paste, reuse (library), or understand. This page is about trying to understand the fundamentals. As part of understanding I write code as well. Feel free to copy if that is what is needed, don't have to judge yourself. 
+There are two aspects of AlgoDS that are fundamental (reusable). 
++ Algorithm design techniques
++ Datastructures
 
-### Problems
+This page is about understanding these two fundamentals. Both are elaborated in sections below. As part of the understanding I write code as well. Again, the intent to understand is personal. If you want to copy, feel free - no inhibitions!
+
+--- 
+## Problems
 
 Problem specifies the provided input and the expected output relation in general terms [1]. These computational problems which, as far as I understand,  means solvable by algorithms using a programming language and a computer. 
 
@@ -22,7 +27,8 @@ Some of the problems are:
 - Matrix problems
 etc.
 
-### Solutions
+--- 
+### Algorithm Solutions
 
     Input  -->  Algorithm (computational instructions)  -->  Output
 
@@ -57,7 +63,8 @@ Algorithms (programs) use computer resources to execute. The resources are time 
 ### Correctness
 Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
 
-## Techniques
+--- 
+## Design techniques
 When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! an algorithm is born. It took many repeated readings to realize that algorithm are designed using techniques and not magic. 
 
 
@@ -82,6 +89,7 @@ Two techniques is what I have come across till now. [1]
 ### Randomized algorithm
 + Randomized quicksort -> uses randomization to increase the probably of balanced partition.
 
+---
 ## Data Structures 
 Data structure is a way to recognize relations between the elements in a input and take advantage of it. It involves a tradeoff, achieving time efficiency for some of the operations while inefficiency for some of the other operations.
 
