@@ -7,7 +7,7 @@ It helps to keep things simple and intuitive. What does fundamental mean in simp
 
 Two reusable aspects of AlgoDS are: 
 + [Design techniques](techniques/DesignTechniques.md)
-+ Datastructures
++ [Datastructures](ds/README.md)
 
 Mostly every computational problem can be solved using these two reusables. Implicit is that the two constitute an exhaustive list. I would argue so. Think of a program in its basic - instructions and data. Design techniques optimize on reducing the number of instructions to solve a problem. Data structures optimize on access paths by organizing data/elements using the latent relations. 
 
@@ -47,23 +47,12 @@ Interestingly one wants to know what's the lower (best case) bound and what's th
 Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
 
 ---
-## Data Structures 
-Data structure is a way to recognize relations between the elements in a input and take advantage of it. It involves a tradeoff, achieving time efficiency for some of the operations while inefficiency for some of the other operations.
-
-there are plenty of data structures 
-+ linear - array, linked list, stack, queue
-+ hierarchical - heap, tree variants 
-+ dictionaries - hashtable, kv maps 
-+ graphs 
-etc.
-
-
 
 ## Why MD?
 Markdown is suitable for blogging. There are tools that convert md files to web pages.
 Don't want to be bothered about HTML and CSS unless required.
 Markdown is flexible - can include HTML, and CSS if required.
 
-
+--- 
 ## References
 [1] Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2001). Introduction to algorithms (3rd ed.). MIT Press.
