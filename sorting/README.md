@@ -33,8 +33,9 @@ Put in pseudocode the question is ...
         }
         A[i + 1] = key  // place key in the right position. 
 ```
-5. 
-``` sort(A, n) : 
+5. Sorting the original problem
+``` 
+    sort(A, n) : 
         sort(A, n-1)        // sort the subproblem 
         place (A, n)        // place the n'th element in the solved subproblem.
 ``` 
