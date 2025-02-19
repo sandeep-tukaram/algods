@@ -1,4 +1,4 @@
 ## Fundamentals applied to Sorting Problem
 
-+ [Design Techniques](DesignTechniques.md)
-+ [Datastructures](Datastructures.md)
++ [Design Techniques for Sorting](DesignTechniques.md)
++ [Datastructures for Sorting](Datastructures.md)
