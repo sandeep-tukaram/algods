@@ -10,7 +10,7 @@ import java.util.Arrays;
                 + O(n);         //  while (..) {} 
 
     T(n) = O(n^2);
-    */ 
+*/ 
 public class insertionsort {
 
 
