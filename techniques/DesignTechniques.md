@@ -1,6 +1,6 @@
 # Design techniques
 
-When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! an algorithm is born. It took many repeated readings to realize that algorithm are designed using techniques and not magic. 
+When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! It took many repeated readings to realize the usage of design techniques. 
 
 
 ## Subproblems approach
