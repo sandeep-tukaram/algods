@@ -42,7 +42,7 @@ Put in pseudocode the question is ...
     This is a recursion. T(n) = T(n-1) + O(n) = O(n^2). 
 
 
-### Split by fraction or Divide - merge sorting.
+### Split by fraction or dividing - merge sorting.
 While incremental splittling creates subproblems of differential sizes, what if we divide the problem into (two) parts. Solve the parts and combine them.
 This is what is called Divide and Conquer.
 
