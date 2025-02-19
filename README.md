@@ -9,7 +9,7 @@ I will try to stick to one principle - Keep it Simple and Intuitive (KISI)
 Based on that principle, I reduce fundamental to mean reusable. It's crude, but simple. Reusable, reapplicable etc is a tangible concept as a developer.
 
 Two fundamental (reusable) aspects of AlgoDS are: 
-+ Design techniques
++ Design techniques (techniques/DesignTechniques.md)
 + Datastructures
 
 Will structure problem solving based on these fundamentals.
@@ -48,32 +48,6 @@ Interestingly one wants to know what's the lower (best case) bound and what's th
 
 ### Correctness
 Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
-
---- 
-## Design techniques
-When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! an algorithm is born. It took many repeated readings to realize that algorithm are designed using techniques and not magic. 
-
-
-### Subproblems technique
-The big idea is simple. Split a problem into smaller problems (subproblems). Solve the subproblems and reuse their solution to solve the original problem. The general structure of the idea looks like below. 
-
-    solve problem  {
-        solve subproblem1 {}, subproblem2 {} ...        // split/divide
-        reuse solutions of all the subproblems.         // combine
-    }
-
-There are few ways to split a problem into subproblems 
-+ incremental
-+ divide
-+ partition
-
-### Optimization
-Two techniques is what I have come across till now. [1]
-+ Greedy approach - optimize every step, leads to globally optimal solution. Proving correctness is a challenge.
-+ Dynamic programming - overlapping subproblems
-
-### Randomized algorithm
-+ Randomized quicksort -> uses randomization to increase the probably of balanced partition.
 
 ---
 ## Data Structures 
