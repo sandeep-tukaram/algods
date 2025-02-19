@@ -1,4 +1,4 @@
-## Design Techniques for sorting. 
+## Design Techniques for Sorting. 
 
 ### Subproblem split approach. 
 I specifically use the term split, cause it makes using the technique and various ways of splitting intuitivie. Intuitively one can split things in few ways.
