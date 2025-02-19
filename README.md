@@ -10,7 +10,7 @@ There are two aspects of AlgoDS that are fundamental (reusable).
 + Algorithm design techniques
 + Datastructures
 
-This page is about understanding these two fundamentals. Both are elaborated in sections below. As part of the understanding I write code as well. Again, the intent to understand is personal. If you want to copy, feel free - no inhibitions!
+Will try to solve problems using these two fundamental perspectives. The repository will contain code. Again, the intent and style is personal. Hope it helps larger audience.
 
 --- 
 ## Problems
