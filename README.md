@@ -1,4 +1,4 @@
-Go to [Sorting](sorting/README.md)
+Go to [Sorting](sorting/docs/Sorting.md)
 
 # algods
 Repository contains notes, code etc related to algo and ds. Purpose is mostly self serving - to better understand the space. Hopefully it helps others as well.

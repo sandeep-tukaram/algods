@@ -1,7 +1,3 @@
-# Sorting Problem - Algo and DS applied.  
-This page explores algo techniques and DS applied to solve sorting problem and to make it efficient. The idea is to make it intuitive and not magic.
-
-
 ## Design Techniques for sorting. 
 
 ### Subproblem split approach. 
