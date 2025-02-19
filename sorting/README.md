@@ -116,60 +116,73 @@ At this moment, I can't explain this. My expecation was that the reverse sorted 
 
 
 #### Actuals
+
 ```
 ***** Testing for generated sorted array *****
 Array size: 1000
-MergeSort time: 1.55 ms
-MergeSort2 time: 0.20 ms
+MergeSort time: 0.95 ms
+MergeSort2 time: 0.28 ms
+quicksort time: 0.02 ms
 --------------------
 Array size: 10000
-MergeSort time: 2.51 ms
+MergeSort time: 2.33 ms
 MergeSort2 time: 0.10 ms
+quicksort time: 0.08 ms
 --------------------
 Array size: 100000
-MergeSort time: 31.71 ms
-MergeSort2 time: 1.39 ms
+MergeSort time: 30.82 ms
+MergeSort2 time: 0.29 ms
+quicksort time: 0.30 ms
 --------------------
 Array size: 1000000
-MergeSort time: 155.33 ms
-MergeSort2 time: 14.40 ms
+MergeSort time: 118.86 ms
+MergeSort2 time: 9.67 ms
+quicksort time: 11.30 ms
 --------------------
 
 
 ***** Testing for randomly generated array *****
 Array size: 1000
-MergeSort time: 0.35 ms
-MergeSort2 time: 0.26 ms
+MergeSort time: 0.41 ms
+MergeSort2 time: 0.22 ms
+quicksort time: 0.13 ms
 --------------------
 Array size: 10000
-MergeSort time: 1.43 ms
-MergeSort2 time: 1.54 ms
+MergeSort time: 1.75 ms
+MergeSort2 time: 1.58 ms
+quicksort time: 1.36 ms
 --------------------
 Array size: 100000
-MergeSort time: 36.52 ms
-MergeSort2 time: 48.38 ms
+MergeSort time: 44.42 ms
+MergeSort2 time: 33.44 ms
+quicksort time: 9.08 ms
 --------------------
 Array size: 1000000
-MergeSort time: 182.03 ms
-MergeSort2 time: 128.23 ms
+MergeSort time: 144.86 ms
+MergeSort2 time: 150.98 ms
+quicksort time: 153.59 ms
 --------------------
 
 
 ***** Testing for generated reverse sorted array *****
 Array size: 1000
-MergeSort time: 0.02 ms
-MergeSort2 time: 0.02 ms
+MergeSort time: 0.03 ms
+MergeSort2 time: 0.04 ms
+quicksort time: 0.04 ms
 --------------------
 Array size: 10000
-MergeSort time: 0.24 ms
-MergeSort2 time: 0.24 ms
+MergeSort time: 0.32 ms
+MergeSort2 time: 0.44 ms
+quicksort time: 0.44 ms
 --------------------
 Array size: 100000
-MergeSort time: 2.75 ms
-MergeSort2 time: 2.99 ms
+MergeSort time: 4.20 ms
+MergeSort2 time: 5.28 ms
+quicksort time: 5.11 ms
 --------------------
 Array size: 1000000
-MergeSort time: 122.96 ms
-MergeSort2 time: 128.12 ms
+MergeSort time: 139.40 ms
+MergeSort2 time: 95.86 ms
+quicksort time: 97.63 ms
 --------------------
 ```
