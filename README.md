@@ -1,12 +1,12 @@
 Go to [Sorting](sorting/README.md)
 
 # algods
-This is a repository to study and implement algorithms and data structures. By study I mean notes reading books, articles, blogs etc. 
+Repository contains notes, code etc related to algo and ds. Its mostly for self serving purpose - to better understand the space. Hopefully it helps others as well.
 
+## AlgoDS is fundamental ?
+Something fundamental, for me in simple terms, is reusable - reapplicable if not copy-paste. Personally, I consider copy-paste highly misunderstood and that it is the highest form of reuse. It simply makes life simpler and helps prioritize focus like non other. The prioritzation aspect of copy-paste is the most misunderstood. Statements such as copy-paste hinders understanding is synonymous to the statement that copy-paste helps prioritize. Its not the copy-paste, the act itself, but the decision behind what to copy-paste and what to understand is the one that is important.  
 
-
-## Algorithms 
-Given a problem specification including input and output relation, an algorithm is a step by step computational instructions to solve the problem. The algorithm must be useful for all instances of the problem. It must be correct. It must be practical meaning efficient. A problem can have multiple algorithms, and the most efficient one is the best. 
+Algorithm techniques and datastructures are reusable (fundamental). It depends on one's choice to either copy-paste, reuse (library), or understand. This page is about trying to understand the fundamentals. As part of understanding I write code as well. Feel free to copy if that is what is needed, don't have to judge yourself. 
 
 ### Problems
 
@@ -92,8 +92,6 @@ there are plenty of data structures
 + graphs 
 etc.
 
-## It's Fundamental, why ?
-Something fundamental, for me in simple terms, is reusable in some sense. Algorithm techniques are reusable to wide variety of problems, infact to construct data structures as well. 
 
 
 ## Why MD?
