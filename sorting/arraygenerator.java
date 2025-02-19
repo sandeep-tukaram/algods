@@ -1,0 +1,30 @@
+import java.util.Random;
+
+public class arraygenerator {
+
+    static Integer[] randomIntegers(int size) {
+        Random rand = new Random();
+        Integer[] arr = new Integer[size];
+        for (Integer i = 0; i < size; i++) {
+            arr[i] = rand.nextInt(1000000);
+        }
+        return arr;
+    }
+
+    static Integer[] sortedIntegers(int size) {
+        Integer[] arr = new Integer[size];
+        for (Integer i = 0; i < size; i++) {
+            arr[i] = i+1;
+        }
+        return arr;
+    }
+
+    static Integer[] reverseSortedIntegers(int size) {
+        Integer[] arr = new Integer[size];
+        for (Integer i = 0; i < size; i++) {
+            arr[i] = size-i;
+        }
+        return arr;
+    }
+    
+}

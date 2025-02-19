@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class MergeSortBenchmark {
     public static void main(String[] args) {
         // Test different array sizes
@@ -7,22 +5,19 @@ public class MergeSortBenchmark {
         
         System.out.println("\n\n***** Testing for generated sorted array *****");
         for (int size : sizes) {
-            // Generate random array
-            Integer[] arr = generateSortedArray(size);
+            Integer[] arr = arraygenerator.sortedIntegers(size);
             test(arr);
         }
 
         System.out.println("\n\n***** Testing for randomly generated array *****");
         for (int size : sizes) {
-            // Generate random array
-            Integer[] arr = generateRandomArray(size);
+            Integer[] arr = arraygenerator.randomIntegers(size);
             test(arr);
         }
 
         System.out.println("\n\n***** Testing for generated reverse sorted array *****");
         for (int size : sizes) {
-            // Generate random array
-            Integer[] arr = generateReverseSortedArray(size);
+            Integer[] arr = arraygenerator.reverseSortedIntegers(size);
             test(arr);
         }
     }
@@ -46,32 +41,5 @@ public class MergeSortBenchmark {
                     System.out.printf("MergeSort time: %.2f ms\n", duration);
                     System.out.printf("MergeSort2 time: %.2f ms\n", duration2);
                     System.out.println("--------------------");
-    }
-    
-    private static Integer[] generateRandomArray(int size) {
-        Random rand = new Random();
-        Integer[] arr = new Integer[size];
-        for (Integer i = 0; i < size; i++) {
-            arr[i] = rand.nextInt(1000000);
-        }
-        return arr;
-    }
-
-
-    private static Integer[] generateSortedArray(int size) {
-        Integer[] arr = new Integer[size];
-        for (Integer i = 0; i < size; i++) {
-            arr[i] = i+1;
-        }
-        return arr;
-    }
-
-
-    private static Integer[] generateReverseSortedArray(int size) {
-        Integer[] arr = new Integer[size];
-        for (Integer i = 0; i < size; i++) {
-            arr[i] = size-i;
-        }
-        return arr;
     }
 }
