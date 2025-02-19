@@ -81,24 +81,24 @@ into three subproblem A[0 .. k-1], A[k], A[k + 1 .. n]. A[k] is already in its r
 reduces to sorting A[0 .. k-1] and A [0 .. k+1] separately and we are done. 
 
 pseducode 
-a. The original problem
+1. The original problem
 ```
     sort (A, 0, n): 
         k = partition (A, 0, n);  
         sort(A, 0, k)
         sort(A, k+1, n)
 ```
-b. partition(A, 0, n) is the famous subroutine illustrated in textbooks [1]. It's simple scan operation and runs in O(n) time. 
-c. Recursio for above 
+2. partition(A, 0, n) is the famous subroutine illustrated in textbooks [1]. It's simple scan operation and runs in O(n) time. 
+3. Recursio for above 
     T(n) = O(n) + T(k) + T(n-k)
-d. Choosing k becomes important.  
+4. Choosing k becomes important.  
 ```
     if k = n/2, then  T(n) = O(n) + 2 T(n/2)  = O(nlgn)      // balanced partition, runtime similar to merge sort
     if k = 1, then T(n) = O(n) + T(n-1) + T(1) = O(n^2)     // unbalanced partition, runtime similar to insertion sort. 
 ``` 
-e. Cormen [1] illusrates that the sorting is O(nlgn) for unbalanced split k = 9/10 n. Only for the extereme unlucky case one ends up with k = 1 for all partitions. 
-f. Randomized partition reduces the probability of k = 1. 
-g. guaranteed balanced partition can be obtained using median SELECT routine [1].
+5. Cormen [1] illusrates that the sorting is O(nlgn) for unbalanced split k = 9/10 n. Only for the extereme unlucky case one ends up with k = 1 for all partitions. 
+6. Randomized partition reduces the probability of k = 1. 
+7. guaranteed balanced partition can be obtained using median SELECT routine [1].
 
 
 ## Benchmarks 
