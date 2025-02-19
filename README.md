@@ -1,6 +1,5 @@
 Go to [Sorting](sorting/docs/README.md)
 
-# algods
 Repository contains notes, code etc related to algo and ds. Purpose is mostly self serving - to better understand the space. Hopefully it helps others as well.
 
 ## AlgoDS is fundamental ?
