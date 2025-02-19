@@ -49,20 +49,25 @@ This is what is called Divide and Conquer.
 Approach is similar. 
 1. We divide A[0 .. n] into A[0 .. n/2] and A[n/2+1 .. n] equal parts. 
 2. We assume sort(A[0 .. n/2]) and sort(A[n/2+1 .. n])
+```
             A[0] <= ... <= A[n/2]   
             A[n/2 + 1] <= ... <= A[n-1]   
-
+```
 3. Question is can we sort(A[0 .. n]) using the above two solutions. 
 4. Using two pointer technique,   merge()
+```
         pointer a -> A[0]
         pointer b -> A[n/2 + 1] 
+```
     we can iteratively choose the minimum of the two elements and move the correponding pointer right. 
 5. Above is the famous merge(A, B) two sorted arrays subroutine. Its O(n). 
 6. consolidating everything above 
-    sor(A, 0, n): 
+```
+    sort(A, 0, n): 
         sort (A, 0, n/2)
         sort (A, n/2 + 1, n)
         merge (A, 0, n/2, n)    // equivalent to merge ((A, 0, n/2), (A, n/2 + 1, n)) 
+```
 7. A recursion for above 
     T(n) = 2T(n/2) + O(n) = O(nlgn)
 
@@ -76,16 +81,21 @@ into three subproblem A[0 .. k-1], A[k], A[k + 1 .. n]. A[k] is already in its r
 reduces to sorting A[0 .. k-1] and A [0 .. k+1] separately and we are done. 
 
 pseducode 
-a. sort (A, 0, n): 
-    k = partition (A, 0, n);  
-    sort(A, 0, k)
-    sort(A, k+1, n)
+a. The original problem
+```
+    sort (A, 0, n): 
+        k = partition (A, 0, n);  
+        sort(A, 0, k)
+        sort(A, k+1, n)
+```
 b. partition(A, 0, n) is the famous subroutine illustrated in textbooks [1]. It's simple scan operation and runs in O(n) time. 
 c. Recursio for above 
     T(n) = O(n) + T(k) + T(n-k)
 d. Choosing k becomes important.  
+```
     if k = n/2, then  T(n) = O(n) + 2 T(n/2)  = O(nlgn)      // balanced partition, runtime similar to merge sort
     if k = 1, then T(n) = O(n) + T(n-1) + T(1) = O(n^2)     // unbalanced partition, runtime similar to insertion sort. 
+``` 
 e. Cormen [1] illusrates that the sorting is O(nlgn) for unbalanced split k = 9/10 n. Only for the extereme unlucky case one ends up with k = 1 for all partitions. 
 f. Randomized partition reduces the probability of k = 1. 
 g. guaranteed balanced partition can be obtained using median SELECT routine [1].
