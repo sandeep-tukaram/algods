@@ -12,7 +12,7 @@ I specifically use the term split, cause it makes using the technique and variou
 
 We explore all these ways of splitting for the sorting problem intuitively. 
 
-#### Split incrementally or differentially - insertion sorting.
+### Split incrementally or differentially - insertion sorting.
 One obvious way to arrive at a subproblem is to reduce the size of a problem differentially. In simple terms, n-k is a smaller problem compared to 
 n.  k is obviously a positive integer not greater than n. The question is can reuse the solution to n-k problem to sort array of size n. 
 
@@ -37,7 +37,7 @@ Put in pseudocode the question is ...
     This is a recursion. T(n) = T(n-1) + O(n) = O(n^2). 
 
 
-#### Split by fraction or Divide - merge sorting.
+### Split by fraction or Divide - merge sorting.
 While incremental splittling creates subproblems of differential sizes, what if we divide the problem into (two) parts. Solve the parts and combine them.
 This is what is called Divide and Conquer.
 
@@ -64,7 +64,7 @@ Approach is similar.
 Split by division yields faster solution compared to splitting incrementally. 
  
 
-#### Split by partitioning - quick sort.
+### Split by partitioning - quick sort.
 Assume you pick an element in the array A[0..n] and place it in the correct position k in a sorted array. By correct what is meant is that all the elements 
 smaller than (or equal to)  A[k] are to its left and all the elements larger than A[k] are to its right. A[k] is referred to as pivot. It partitions array 
 into three subproblem A[0 .. k-1], A[k], A[k + 1 .. n]. A[k] is already in its right position, that is what is assumed to start with. The problem, now, 
@@ -86,18 +86,18 @@ f. Randomized partition reduces the probability of k = 1.
 g. guaranteed balanced partition can be obtained using median SELECT routine [1].
 
 
-## Benchmarked mergesort and mergesort2 on personal machine - mac machine.
+## Benchmarks 
+The benchmarks are run on personal mac.
 
-Below is the benchmark on my machine. Some of the numbers are as expected. The improvement when input is 
-already sorted is order of magnitude better in line with theoretical O(n) over O(nlgn). 
+### mergesort O(nlgn) best case and mergesort2 O(n) best case.
+Most of the numbers are as expected. The improvement when input is already sorted is order of magnitude better in line with theoretical O(n) over O(nlgn). 
 
 
-### Anomoly - expected vs actual
+#### Anomoly - expected vs actual
 There is an anomoly I can't explain. I have run the benchmarks repeatedly but find the same pattern. 
 
 1. Reverse array time for all sizes are better, especially for mergesort algo, compared to random or sorted array input. 
 At this moment, I can't explain this. My expecation was that the reverse sorted array should have clocked worse. 
-
 
 
 #### Actuals
