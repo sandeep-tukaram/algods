@@ -3,8 +3,8 @@
 ### Subproblem split approach. 
 I specifically use the term split, cause it makes using the technique and various ways of splitting intuitivie. Intuitively one can split things in few ways.
 + incrementally or differentially:  n ->  (n - k)   +  k
-+ divide:  n -> n/2 + n/2
-+ partition: n ->  k + 1 +  (n - (k + 1)). This is not intuitive I admit :)
++ divide:  n -> n/m; does't have to be equal sized subproblems.
++ partition: n ->  k - 1 + 1 +  (n - k). its not intuitive, but hold patience!
 
 We explore all these ways of splitting for the sorting problem intuitively. 
 
