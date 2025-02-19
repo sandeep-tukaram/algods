@@ -1,7 +1,7 @@
 Go to [Sorting](sorting/README.md)
 
 # algods
-Repository contains notes, code etc related to algo and ds. Its mostly for self serving purpose - to better understand the space. Hopefully it helps others as well.
+Repository contains notes, code etc related to algo and ds. Purpose is mostly for self serving - to better understand the space. Hopefully it helps others as well.
 
 ## AlgoDS is fundamental ?
 Something fundamental, for me in simple terms, is reusable - reapplicable if not copy-paste. Personally, I consider copy-paste highly misunderstood and that it is the highest form of reuse. It simply makes life simpler and helps prioritize focus like non other. The prioritzation aspect of copy-paste is the most misunderstood. Statements such as copy-paste hinders understanding is synonymous to the statement that copy-paste helps prioritize. Its not the copy-paste, the act itself, but the decision behind what to copy-paste and what to understand is the one that is important.  
