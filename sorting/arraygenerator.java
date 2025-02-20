@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class arraygenerator {
@@ -27,4 +28,7 @@ public class arraygenerator {
         return arr;
     }
     
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(randomIntegers(20)));
+    }
 }

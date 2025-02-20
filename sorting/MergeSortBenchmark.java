@@ -45,12 +45,22 @@ public class MergeSortBenchmark {
         long endTime3 = System.nanoTime();
         double duration3 = (endTime3 - startTime3) / 1_000_000.0;
 
+        // Benchmark quicksort
+        Integer[] arr4 = arr.clone();     
+        long startTime4 = System.nanoTime();
+        mergesort2.sort(arr4, 0, arr.length-1);
+        long endTime4 = System.nanoTime();
+        double duration4 = (endTime4 - startTime4) / 1_000_000.0;
+
+
+
         // Benchmarking insertionsort using recursion throws Stackoverflow error.
 
         System.out.printf("Array size: %d\n", arr.length);
         System.out.printf("MergeSort time: %.2f ms\n", duration);
         System.out.printf("MergeSort2 time: %.2f ms\n", duration2);
         System.out.printf("quicksort time: %.2f ms\n", duration3);
+        System.out.printf("quicksort2 time: %.2f ms\n", duration4);
         System.out.println("--------------------");
     }
 }
