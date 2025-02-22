@@ -3,6 +3,7 @@
 ## Structure
 
 a. Components:
+  An array has two components, one is the elements that are placed in the array the other is the memory itself where an element gets placed. Its key to understand that these two are different concepts. Sometimes the value of the element matches the position, doesn't mean they are same things.
   1. elements
       * uniform datatype -> all elements of an array have the same data type.
       * empty -> positions can be unfilled.
@@ -11,19 +12,25 @@ a. Components:
   2. memory/position/location
       * memory is allocated/reserved.
       * contiguous block of memory.
-      * fixed/varying size array.
+      * bounded bock of memory. [start, end]. Usually start is represented as 0, so in a n sized array position n-1 holds the nth element. A[0, n), A[0..n), 
+      A[0, n-1], A[1, n] etc are some valid notaions used to represent an Array A of size n.
 
 b. Relations:
   1. array as a datastructure doesn't employ relations between elements to position them.
 
-c. Function/API:
+c. Function/Goals:
+  The fundamental goal of array is random access. Which means, store and retrieve an element directly without having to go through elements before/after it in the structure. 
+
+  Ramdom access translates into following operations.
   1. get(i), A[i]
-  2. set(e, i), A[i] = e. Overrides if any at i.
+  2. set(i, e), A[i] = e. Overrides previous element at i.
+  
+  Both get() and set() are O(1). Arrays are optimized for getting the element and setting the element by position.
 
 ---
 
-## Behavior - performance (time and space), error
-Behavior is latent in the structure. In other words, the structure implies behavior, which may get triggered by events. 
+## Behavior - operation performance (time and space) and error
+Behavior is latent in the structure. Events suppress or release the latent behavior.
 A simple framework to understand behavior in algo/DS is to look at the correctness (or error) and the performance (time and space).
 
 1. due to element:
@@ -41,6 +48,9 @@ A simple framework to understand behavior in algo/DS is to look at the correctne
       + shadowing or copy-on-write -> copy an array to a bigger sized array. (TODO - code)
       + linking multiple fixed size array -> similar to block linked list. (TODO - code)
       + in either case, the scheduling of the new array (allocation) is an optimization/tuning problem.
+    * contiguous memory
+      + next(i, k) -> returns element at i+k position. O(1)
+      + previous(i, k) - > returns elemnt i-k position. O(1)
     * error
       + insufficient memory - heap memory is insufficient/array is too large. OutOfMemoryError (java).
       + index out of bound - if the position of the array is beyond the allocated contiguous memory blocks. i < 0 or i >= n
@@ -51,13 +61,18 @@ A simple framework to understand behavior in algo/DS is to look at the correctne
     * there can be duplicates.
 
 5. due to functions/api:
-    * to insert an element at i, all the valid elements at i and beyond will have to shift right.  (TODO - code)
-      + insert(e, i) -> O(n) worst case (at start).
-      + insert(e) -> O(1) best case (at tail). tail < n.
-    * to delete an element at i, all the valid elements at i and beyond will have to shift left. (TODO - code)
-      + delete(e, i) -> O(n) worst case (at start).
-      + delete(e) -> O(1) best case (at tail), delete(e, tail). tail < n
-    * insert/delete implementation can vary depending on how one wants to treat a empty element.
+    * insert(e, i) {
+      // shift right all elements starting at i. start from the end.
+      for (k: n->i) set(k+1) = get(k) 
+      set(e, i);
+    }
+    * delete(e,i) {
+      shift left all elements starting at i + 1.  
+      for(k: i-> n) set(i) = get(i+1);
+    }
+    * both insert and delete are O(n) operations. Arrays not optimal for insert and delete when compared to get/set. LinkedList is one the datastructure that does a O(1) 
+    * fragmentation -> occurs when there are empty spaces interspersed. 
+    * compaction -> optimization to consolidate all non-empty spaces together. Refer to the code.
     * error
       + overflow -> when insert(e), tail >= n
       + underflow -> when delete(e), tail <=0
