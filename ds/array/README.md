@@ -17,6 +17,7 @@ a. Components:
 
 b. Relations:
   1. array as a datastructure doesn't employ relations between elements to position them.
+  2. memory is contiguous.
 
 c. Function/Goals:
   The fundamental goal of array is random access. Which means, store and retrieve an element directly without having to go through elements before/after it in the structure. 
