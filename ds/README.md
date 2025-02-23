@@ -14,7 +14,7 @@ For each datastructure, I will study the structure. From the structure I will tr
 ## Structure 
 Structure has components, relations, and goals. 
 
-In case of  a datastructure:
+In case of a datastructure:
 
 ### Components
 A datastructure stores elements in memory locations. The simplest of the datastructure is a variable. In languages like java, variables stores primitive 
@@ -23,9 +23,9 @@ element in stack memory. Likewise a reference in java points to an object stored
 + memory location(s)
 
 ### Relations
-Datastructure is a way to store a set of elements into available memory locations. We need a scheme to determine which element goes in where. 
+Relations help craft a scheme to determine the location an element needs to be stored at.
 
-Relations may exist 
+Relations may exist
 + among elements, ex. order relation.
 + among memory locations - contiguous, links etc.
 + between memory location and elements - hashing.
