@@ -17,18 +17,17 @@ Structure has components, relations, and goals.
 In case of  a datastructure:
 
 ### Components
-Any structure has elements and memory locations. Think of the simplest of the datastructure - a variable. A variable in programming is a memory location where you store an element. Element has datatype - either primitive or object/record type. In case of an object, the variable technically is a reference which refers to a storage location in a heap (memory). Think storage to keep simple whereever possible.
-
+A datastructure stores elements in memory locations. The simplest of the datastructure is a variable. In languages like java, variables stores primitive 
+element in stack memory. Likewise a reference in java points to an object stored in heap. 
 + element(s)
 + memory location(s)
-
 
 ### Relations
 Datastructure is a way to store a set of elements into available memory locations. We need a scheme to determine which element goes in where. 
 
 Relations may exist 
-+ among elements, ex. order relation. 
-+ among memory locations - contiguous, links etc. 
++ among elements, ex. order relation.
++ among memory locations - contiguous, links etc.
 + between memory location and elements - hashing.
 
 Datastructures incorporate relation when organizing elements.
