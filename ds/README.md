@@ -12,7 +12,7 @@ A system has a structure. The structure gives rise to a latent behavior. Events 
 For each datastructure, I will study the structure. From the structure I will try and understand the behavior of the datastructure. There is generic framework we can work with to examine structure and behavior. 
 
 ## Structure 
-Structure is looked has - components, relations, and goals. 
+Structure has components, relations, and goals. 
 
 In case of  a datastructure:
 
