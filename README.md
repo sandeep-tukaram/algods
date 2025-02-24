@@ -3,13 +3,13 @@ Go to [Sorting](sorting/docs/README.md)
 Repository contains notes, code etc related to algo and ds. Purpose is mostly self serving - to better understand the space. Hopefully it helps others as well.
 
 ## AlgoDS is fundamental ?
-It helps to keep things simple and intuitive. What does fundamental mean in simple terms? Think reusables. It's crude, but simplifyies. As a developer, reusable is a everyday tangible concept.
+It helps to keep things simple and intuitive. What does fundamental mean in simple terms? Think reusables. It's crude, but simplifyies. As a developer, reusable is a everyday tangible concept. Algorithm design techniques are the reusable.  
 
 Two reusable aspects of AlgoDS are: 
-+ [Design techniques](techniques/DesignTechniques.md)
-+ [Datastructures](ds/README.md)
++ [Instruction structures](techniques/DesignTechniques.md)
++ [Data structures](ds/README.md)
 
-Mostly every computational problem can be solved using these two reusables. Implicit is that the two constitute an exhaustive list. I would argue so. Think of a program in its basic - instructions and data. Design techniques optimize on reducing the number of instructions to solve a problem. Data structures optimize on access paths by organizing data/elements using the latent relations. 
+Mostly every computational problem can be solved using these two reusables. Implicit is that the two constitute an exhaustive list. I would argue so. Think of a program in its basic - instructions and data. Instruction structres optimize on reducing the number of instructions to solve a problem. Data structures organizing data/elements and optimize the access paths to an element or a set of element required for computation. 
 
 --- 
 ## Problems
