@@ -7,9 +7,9 @@ Repository contains notes, code etc related to algo and ds. Purpose is mostly se
 --- 
 ## Problems
 
-Problem specifies the provided input and the expected output relation in general terms.
+Problem specifies, in general terms, the relation between the provided input and the expected output. For example, given input a1, a2, ..., an output in sorted order 
 
-Some of the problems are:
+Some of the problems found in textbooks:
 - Sorting
 - Searching
 - Optimization
