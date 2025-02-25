@@ -1,4 +1,4 @@
-import ds.array.generator;
+import datastructure.array.generator;
 
 public class MergeSortBenchmark {
     public static void main(String[] args) {
