@@ -18,10 +18,22 @@ public class shifter {
                 A[n] = null;
             }
         }
-
     }
 
-    // incrementatl recursion   O(n)
+    // shift i..j  k places O(n)
+    static <T> void iteratively_improved(T[] A, int i, int j, int k) {
+
+        if ( k > 0 && j + k < A.length ) {
+            // shift right
+            for (int n = j; n >= i; n--) {
+                A[n+k] = A[n];
+                A[n] = null;
+            }
+        }
+    }
+
+    // incrementatl recursion  
+    // T(n) = T(n-1) + O(1) = O(n)
     static <T> void incremental(T[] A, int i, int j, int k) {
 
         if (i == j) {
@@ -37,7 +49,7 @@ public class shifter {
 
 
     // division recursion
-    // T(n) = 2T(n/2)   O(lgn)
+    // T(n) = 2T(n/2)  = O(n)
     static <T> void division(T[] A, int i, int j, int k) {
 
         if (i == j) {
@@ -55,7 +67,7 @@ public class shifter {
 
     public static void main(String[] args) {
         Integer[] A = generator.reverseSortedIntegers(10);
-        division(A, 0, 4, 3);
+        iteratively_improved(A, 0, 4, 3);
         System.out.println(Arrays.toString(A));
     }
 }
