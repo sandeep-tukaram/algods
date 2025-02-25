@@ -2,7 +2,7 @@ package ds.array;
 
 import java.util.Arrays;
 
-public class intialization {
+public class intializer {
 
     static void defaultArray() {
         // int defaults to 0;

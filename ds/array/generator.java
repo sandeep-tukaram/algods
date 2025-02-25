@@ -2,7 +2,7 @@ package ds.array;
 import java.util.Arrays;
 import java.util.Random;
 
-public class arraygenerator {
+public class generator {
 
     public static Integer[] randomIntegers(int size) {
         Random rand = new Random();

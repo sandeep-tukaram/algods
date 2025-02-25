@@ -1,4 +1,4 @@
-import ds.array.arraygenerator;
+import ds.array.generator;
 
 public class MergeSortBenchmark {
     public static void main(String[] args) {
@@ -7,19 +7,19 @@ public class MergeSortBenchmark {
         
         System.out.println("\n\n***** Testing for generated sorted array *****");
         for (int size : sizes) {
-            Integer[] arr = arraygenerator.sortedIntegers(size);
+            Integer[] arr = generator.sortedIntegers(size);
             test(arr);
         }
 
         System.out.println("\n\n***** Testing for randomly generated array *****");
         for (int size : sizes) {
-            Integer[] arr = arraygenerator.randomIntegers(size);
+            Integer[] arr = generator.randomIntegers(size);
             test(arr);
         }
 
         System.out.println("\n\n***** Testing for generated reverse sorted array *****");
         for (int size : sizes) {
-            Integer[] arr = arraygenerator.reverseSortedIntegers(size);
+            Integer[] arr = generator.reverseSortedIntegers(size);
             test(arr);
         }
     }

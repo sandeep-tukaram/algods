@@ -2,7 +2,7 @@ package ds.array;
 
 import java.util.Arrays;
 
-public class ArrayShifting {
+public class shifter {
     
     // shift i..j  k places O(n+k)
     static <T> void iteratively(T[] A, int i, int j, int k) {
@@ -54,7 +54,7 @@ public class ArrayShifting {
     }
 
     public static void main(String[] args) {
-        Integer[] A = arraygenerator.reverseSortedIntegers(10);
+        Integer[] A = generator.reverseSortedIntegers(10);
         division(A, 0, 4, 3);
         System.out.println(Arrays.toString(A));
     }
