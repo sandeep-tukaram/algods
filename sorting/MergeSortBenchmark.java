@@ -1,3 +1,5 @@
+import ds.array.arraygenerator;
+
 public class MergeSortBenchmark {
     public static void main(String[] args) {
         // Test different array sizes

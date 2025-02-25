@@ -1,9 +1,10 @@
+package ds.array;
 import java.util.Arrays;
 import java.util.Random;
 
 public class arraygenerator {
 
-    static Integer[] randomIntegers(int size) {
+    public static Integer[] randomIntegers(int size) {
         Random rand = new Random();
         Integer[] arr = new Integer[size];
         for (Integer i = 0; i < size; i++) {
@@ -12,7 +13,7 @@ public class arraygenerator {
         return arr;
     }
 
-    static Integer[] sortedIntegers(int size) {
+    public static Integer[] sortedIntegers(int size) {
         Integer[] arr = new Integer[size];
         for (Integer i = 0; i < size; i++) {
             arr[i] = i+1;
@@ -20,7 +21,7 @@ public class arraygenerator {
         return arr;
     }
 
-    static Integer[] reverseSortedIntegers(int size) {
+    public static Integer[] reverseSortedIntegers(int size) {
         Integer[] arr = new Integer[size];
         for (Integer i = 0; i < size; i++) {
             arr[i] = size-i;
