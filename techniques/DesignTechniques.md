@@ -1,4 +1,4 @@
-# Design techniques
+# Instruction design techniques
 
 When I first read books on algorithms, the design aspect of algorithms at best appeared random. Some genius had an eureka moment and voila! It took many repeated readings to realize the underlying techniques.
 
