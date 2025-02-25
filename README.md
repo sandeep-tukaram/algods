@@ -58,5 +58,6 @@ Don't want to be bothered about HTML and CSS unless required.
 Markdown is flexible - can include HTML, and CSS if required.
 
 --- 
+
 ## References
 [1] Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2001). Introduction to algorithms (3rd ed.). MIT Press.
