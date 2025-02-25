@@ -1,8 +1,6 @@
 Go to [Sorting](sorting/docs/README.md)
 
-Repository contains notes, code etc related to algo and ds. Purpose is mostly self serving - to better understand the space. Hopefully it helps others as well.
-
-
+Repository contains notes, code etc related to algo and ds. Purpose is mostly to serve self - to better understand the space. Hope it helps others as well.
 
 --- 
 ## Problems
