@@ -22,11 +22,11 @@ etc.
 
     Input  -->  Algorithm (computational instructions)  -->  Output
 
-Using a programming language algorithms are implemented and compiled into an executable which is run on a computer. The computer provides the resources - CPU, Memory etc.
+Algorithms are implemented using a programming language. It is compiled into an executable which is then run on a computer. The computer provides the resources - CPU, Memory etc.
 
-                            Algorithm (Program)
-    Input  --->     ------------------------------------               --->  Output
-                        Computer (CPU, Memory, etc.)
+                                Algorithm (Program)
+    Input  --->         ------------------------------------        --->  Output
+                            Computer (CPU, Memory, etc.)
 
 
 ### Efficiency
