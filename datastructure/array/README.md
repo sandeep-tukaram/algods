@@ -1,4 +1,4 @@
-# Structure -> Behavior (Systems Thinking)
+# Array
 --- 
 ## Structure
 
