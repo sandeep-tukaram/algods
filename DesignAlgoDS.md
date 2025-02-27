@@ -61,7 +61,7 @@ Here's how it works:
    compare:     which number is bigger?
    ```
 
-Let us see how it works adding two numbers:
+3. Problem - adding two numbers:
 ```
 load v1 -> v0       # Grab book v1, check its number
 add v2, v0 -> v0    # Grab book v2, add its number to the first one
