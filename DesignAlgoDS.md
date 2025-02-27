@@ -78,20 +78,20 @@ When we're designing algorithms, we're always thinking about our two key parts:
 Let's look at how we can make each one better:
 
 1. Instructions: Making Our Steps Smarter
+
    This is all about how we handle our operations - making them more efficient and clever. Want to learn more about crafting better instructions? 
-   
    Check out our deep dive here: [Instructions](instructiondesign/InstructionDesign.md)
 
 2. Data Organization: Choosing the Right Structure
+
    This is where we get strategic about how we store and access our data. Different problems need different approaches! 
-   
    Dive into the details here: [Data access](datastructure/README.md)
 
 Usually we tackle problems in two steps:
 1. First, figure out how to solve it (get those instructions right!)
 2. Then, make it better (smarter instructions, better data organization)
 
-Remember: every algorithm improvement comes from either making our instructions more efficient or organizing our data more cleverly - or both!
+Again: every algorithm improvement comes from either making our instructions more efficient or organizing our data more cleverly - or both!
 
 ## 5. Scope Note
 Just so you know - there's more to computing than just CPU and memory. Things like reading files or making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage and instructions.
