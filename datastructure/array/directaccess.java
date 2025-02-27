@@ -1,6 +1,5 @@
 package datastructure.array;
 
-// All O(1) operations on an array
 public class directaccess<T> {
 
     T[] A; 
