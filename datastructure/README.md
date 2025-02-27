@@ -1,18 +1,18 @@
 # Data Structures 
-There are many different ways experts have defined datastructures. I'm really not sure whether there is a standard definition. I take a system's view.  
+I'm really not sure whether there is a standard definition for datastructure. I take a system's view.  
 
 --- 
 ## System's View - Structure and Behavior
-This is system's view in few lines - simplicity is the goal and not accuracy. 
 
-A system has a structure. The structure gives rise to a latent behavior. Events supress or releases the latent behavior. This is the framework that I will stick to while writing about the datastructures.
-
----
+Every system has a structure which gives rise to a latent behavior. Events supress or releases the latent behavior.
++ structure
++ behavior
++ event
 
 For each datastructure, I will study the structure. From the structure I will try and understand the behavior of the datastructure. There is generic framework we can work with to examine structure and behavior. 
 
 ## Structure 
-Structure has components, relations, and goals. 
+Struture is made up of components, relations between the components, and goals intended. 
 
 In case of a datastructure:
 
