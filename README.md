@@ -39,7 +39,7 @@ Correctness of algorithm has to be proven. This is usally done using mathematica
 
 ---
 
-(Designing Algorithms)[DesignAlgoDS.md]
+[Designing Algorithms](DesignAlgoDS.md)
 
 --- 
 
