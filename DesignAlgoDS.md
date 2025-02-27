@@ -7,7 +7,7 @@ Look, I get it - taking time to really understand algorithms feels tough. There'
 
 But here's the thing: I decided to take a different path. I spent time diving deep into textbooks, research papers, and blogs. Sure, there's a risk of "falling behind," but I've made peace with that. This is my way of breaking free from that rat race, even if just a bit. I'll be honest - I'm totally fascinated by this stuff, and I think it's worth the time to really get it.
 
-I hope I can encourage you to do the same.
+I hope I can encourage you to do the same while saving lot of time and effort.
 
 ## 2. Approach
 Let's keep this simple and straightforward! We're going to break everything down into manageable pieces. And here's the key thing to remember: every algorithm - and I mean every single one - comes down to just two parts: how we store our data, and the operations we perform on it. Let's see how this plays out, starting with the basics and working our way up to tougher problems.
