@@ -20,31 +20,42 @@ public class shifter {
     // T(n) = 2T(n/2) = O(n)
     static <T> void division(T[] A, int i, int j, int k) {
         if (i == j) {
-            if (i+k < A.length) A[i + k] = A[i];
+            if (i+k >=0 && i+k < A.length) A[i + k] = A[i];
             A[i] = null;
             return;
         }
 
         int m = (j + i)/2;
 
-        division(A, m+1, j, k);
-        division(A, i, m, k);
+        if (k > 0) {
+            division(A, m+1, j, k);
+            division(A, i, m, k);    
+        } else if (k < 0) {
+            division(A, i, m, k);    
+            division(A, m+1, j, k);
+        }
     }
-
 }
 
 // test correctness
-class Correctness {
+class Correctness_Shifter {
     public static void main(String[] args) {
         Integer[] A = generator.reverseSortedIntegers(10);
+
+        // shift right
         shifter.division(A, 0, 4);
         System.out.println(Arrays.toString(A));
+
+        // shift left
+        shifter.division(A, 0, -1);
+        System.out.println(Arrays.toString(A));
+
     }
 }
 
 
 // test efficiency
-class Benchmark {
+class Benchmark_Shifter {
 
     public static void main(String[] args) {
         // Test different array sizes
