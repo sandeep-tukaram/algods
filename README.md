@@ -1,9 +1,7 @@
-Go to [Sorting](sorting/docs/README.md)
-
 Repository contains notes, code etc related to algo and ds. Purpose is mostly to serve self - to better understand the space. Hope it helps others as well.
 
 --- 
-## Problems
+## Computational Problems
 
 Problem specifies, in general terms, the relation between the provided input and the expected output. For example, given input a1, a2, ..., an output in sorted order 
 
@@ -18,7 +16,7 @@ Some of the problems found in textbooks:
 etc.
 
 --- 
-### Algorithm Solutions
+## Algorithm Solutions
 
     Input  -->  Algorithm (computational instructions)  -->  Output
 
@@ -38,8 +36,9 @@ Interestingly one wants to know what's the lower (best case) bound and what's th
 Correctness of algorithm has to be proven. This is usally done using mathematical tools and reasoning.
 
 ---
-
+## QuickLinks
 [Designing Algorithms](DesignAlgoDS.md)
+[General Problems](Problems.md)
 
 --- 
 
