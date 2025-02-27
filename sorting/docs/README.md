@@ -1,4 +1,5 @@
-## Fundamentals applied to Sorting Problem
+# Sorting Problem
 
-+ [Design Techniques for Sorting](DesignTechniques.md)
-+ [Datastructures for Sorting](Datastructures.md)
+## Design techniques to craft and optimize sorting algorithms 
++ [Instructions design](nstructionDesign.md)  optimize instructions.
++ [Datastructure design](Datastructures.md)  optimize data/memory access.
