@@ -59,25 +59,34 @@ add v2, v0 -> v0    # Instruction: Do the math
 store v0 -> v3      # Data Storage: Save our answer
 ```
 
-### 3.4 Algorithm Design Focus
+## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
 1. How can we make our instructions more efficient?
 2. What's the best way to organize our data?
 
-That's why we usually tackle problems in two steps:
+Let's look at how we can make each one better:
+
+1. Instructions: Making Our Steps Smarter
+   This is all about how we handle our operations - making them more efficient and clever. Want to learn more about crafting better instructions? 
+   
+   Check out our deep dive here: [Instructions](instructiondesign/InstructionDesign.md)
+
+2. Data Organization: Choosing the Right Structure
+   This is where we get strategic about how we store and access our data. Different problems need different approaches! 
+   
+   Dive into the details here: [Data access](datastructure/README.md)
+
+Usually we tackle problems in two steps:
 1. First, figure out how to solve it (get those instructions right!)
 2. Then, make it better (smarter instructions, better data organization)
 
-## 4. Design Techniques
-Remember our two-part theme? Here's how we make each part better: 
-+ [Instructions](instructiondesign/InstructionDesign.md) - making our steps smarter and faster
-+ [Data access](datastructure/README.md) - organizing our data in clever ways
+Remember: every algorithm improvement comes from either making our instructions more efficient or organizing our data more cleverly - or both!
 
 ## 5. Scope Note
 Just so you know - there's more to computing than just CPU and memory. Things like reading files or making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage and instructions.
 
 ## 6. Summary
-You know what? After all we've covered, it really boils down to just two key things. Every algorithm - from the simplest to the most complex - is just playing with these two parts:
+After all we've covered, it really boils down to just two key things. Every algorithm - from the simplest to the most complex - is just playing with these two parts:
 
 1. Data Storage
    Hey, this is just about where we put our stuff! Think about:
