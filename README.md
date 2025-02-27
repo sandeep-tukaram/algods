@@ -37,8 +37,8 @@ Correctness of algorithm has to be proven. This is usally done using mathematica
 
 ---
 ## QuickLinks
-[Designing Algorithms](DesignAlgoDS.md)
-[General Problems](Problems.md)
++ [Designing Algorithms](DesignAlgoDS.md)
++ [General Problems](Problems.md)
 
 --- 
 
