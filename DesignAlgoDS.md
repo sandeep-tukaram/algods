@@ -29,35 +29,41 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 
 This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right?
 
-### 3.2 Simplified Computer Model
-Let's talk about how computers handle our two main parts. We use something called a RAM model - don't worry, it's simpler than it sounds! Think of it as a basic set of rules:
-- Every instruction takes the same amount of time
-- Getting or saving data takes the same time every time
-- We can use as much memory as we need
-- All memory is equally fast to access
+### 3.2 Computer Model and Basic Operations
+Let's see how computers handle our two main parts using two key components:
 
-### 3.3 Basic Operations
-So what can our computer actually do? Let's break it down into our two main parts again:
+1. Memory (Data Storage):
+   - Think of this as a giant warehouse of shelves
+   - Each shelf (memory location) can store one piece of data
+   - All shelves are equally fast to access
+   - We can use as many shelves as we need
+   
+   Basic Memory Operations:
+   ```
+   read:  grab something from memory
+   write: put something into memory
+   ```
 
-1. Memory Operations (the data storage part):
-```
-read: grab something from memory
-write: put something into memory
-```
-
-2. Compute Operations (the instruction part):
-```
-arithmetic: add, subtract, multiply, divide
-logical: and, or, not
-comparison: equal to, less than, greater than
-```
+2. CPU (Instructions):
+   - This is where all the actual work happens
+   - Every instruction takes the same amount of time
+   - Can only work with data that's been brought from memory
+   
+   Basic Compute Operations:
+   ```
+   arithmetic: add, subtract, multiply, divide
+   logical:    and, or, not
+   comparison: equal to, less than, greater than
+   ```
 
 Want to see how these work together? Here's what happens when we add two numbers:
 ```
-load v1 -> v0       # Data Storage: Grab the first number
-add v2, v0 -> v0    # Instruction: Do the math
-store v0 -> v3      # Data Storage: Save our answer
+load v1 -> v0       # Memory:      Grab first number from shelf
+add v2, v0 -> v0    # CPU:         Do the math
+store v0 -> v3      # Memory:      Put result back on shelf
 ```
+
+This is called the RAM (Random Access Memory) model, and it perfectly mirrors our two-part view of algorithms. Every algorithm is just a dance between these two components: bringing data from memory to CPU, processing it, and storing results back.
 
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
