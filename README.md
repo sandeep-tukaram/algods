@@ -39,14 +39,7 @@ Correctness of algorithm has to be proven. This is usally done using mathematica
 
 ---
 
-## Designing Algorithms
-First few times I read textbooks on algorithms it appeared magic. Some genius had an eureka moment. It took few readings to see past the magic and realize the systematic logic (technology). 
-
-Every algorithm has instructiona and data. Designing algorithms involves effectively and efficiently structuring the instructions and/or the data.
-
-Design techniques structure: 
-+ [Instructions](instructiondesign/InstructionDesign.md)
-+ [Data](datastructure/README.md)
+(Designing Algorithms)[DesignAlgoDS.md]
 
 --- 
 

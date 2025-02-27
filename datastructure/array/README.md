@@ -3,21 +3,14 @@
 ## Structure
 
 a. Components:
-  An array has two components, one is the elements that are placed in the array the other is the memory itself where an element gets placed. Its key to understand that these two are different concepts. Sometimes the value of the element matches the position, doesn't mean they are same things.
-  1. elements
-      * uniform datatype -> all elements of an array have the same data type.
-      * empty -> positions can be unfilled.
-    
-
-  2. memory/position/location
-      * memory is allocated/reserved.
-      * contiguous block of memory.
-      * bounded bock of memory. [start, end]. Usually start is represented as 0, so in a n sized array position n-1 holds the nth element. A[0, n), A[0..n), 
-      A[0, n-1], A[1, n] etc are some valid notaions used to represent an Array A of size n.
+  As with any datastructure there two things to consider when it comes to components -
+  1. bounded, contiguous memory 
+  2. elements
 
 b. Relations:
-  1. array as a datastructure doesn't employ relations between elements to position them.
-  2. memory is contiguous.
+  1. memory is contiguous.
+  2. array as a datastructure doesn't employ relations between elements to position them.
+
 
 c. Function/Goals:
   The fundamental goal of array is random access. Which means, store and retrieve an element directly without having to go through elements before/after it in the structure. 
@@ -42,6 +35,7 @@ A simple framework to understand behavior in algo/DS is to look at the correctne
           Compaction optimizes the performance. (TODO - code)
 
 3. due to memory:
+    * direct access - a position in array is a direct access to the corresponding word (other memory unit) in memory. This is usually referred to as direct access.  
     * performance -> when does memory allocation happen 
       + compile-time(static ?) - shouldn't apply for interprented languages. (TODO - explore)
       + runtime(dynamic)- languagues such as Java and C provision runtime allocation. Java compiles to bytecode which is then interpreted.
