@@ -6,7 +6,7 @@ The task is cut out. To re-read and to think costs time, perceivably an unafford
 
 --- 
 
-This page contains my understanding of the subject matter. I simplify things, sometimes may be oversimplify. Bear with me. The quest is to identify techniques, understand it and apply it for simple and complex usecases including some leetcode problem solving.
+I simplify things, sometimes oversimplify. Bear with me. The quest is to identify techniques, understand it and apply it for simple and complex usecases including some leetcode problem solving.
 
 ## Simplfied View
 An algorithm is a set of instructions operating upon stored data. I don't think I can simplify this much futher. To illustrate consider a simple instruction of adding to variables. 
