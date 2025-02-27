@@ -13,35 +13,56 @@ I simplify things, sometimes oversimplify. Bear with me. The quest is to identif
 ## 3. Core Concepts
 
 ### 3.1 Simplified View
-An algorithm is a set of instructions operating upon stored data. I don't think I can simplify this much futher. To illustrate consider a simple instruction of adding to variables. 
+An algorithm is a set of instructions operating upon stored data. I don't think I can simplify this much further. To illustrate consider a simple instruction of adding two values:
 
 ```
     v1 = 2
     v2 = 4
-    v1 + v2   ->   add (v1, v2) is a add instruction on variables v1 and v2.
+    v1 + v2   # Adding values stored in memory locations v1 and v2
 ```
 
 ### 3.2 Simplified Computer Model
-To look at how this simple instruction is executed on a computer we assume a simple [RAM model](RAM.md).
+To understand how instructions are executed, we use a simple [RAM model](RAM.md). This theoretical model assumes:
+- Each basic operation takes exactly one time step
+- Each memory access takes constant time
+- Memory is unbounded and can be directly accessed
+- There is no memory hierarchy (like registers or cache)
 
-### 3.3 Simplified Language
-Using a made up simple assembly language the sequence of instruction would look like 
+### 3.3 Basic Operations
+In our RAM model, we have two fundamental types of operations:
 
+1. Memory Access Operations:
 ```
-    load v1 -> v0       
-    add v2, v0 -> v0
-    store v0 -> v3
+    read value from memory location
+    write value to memory location
 ```
 
-Think of v0, v1, v2  and v3 as memory locations. CPU can access any of these. Remember, this is a made up assembly language. The actual instructions differ based on computer architectures.
+2. Compute Operations:
+```
+    arithmetic operations (add, subtract, multiply, divide)
+    logical operations (and, or, not)
+    comparison operations (equal, less than, greater than)
+```
 
-The CPU loads v1 and v2 from the memory. It then exectues ADD operation on v1 and v2. Stores the result in v3 back into the memory. So, in our simplified model two things happen:
-+ data/memory access operations  -> load v1, v2 ;store v3
-+ instruction/compute operations -> v1 + v2
+For example, adding two numbers involves:
+```
+    load v1 -> v0       # Read first value
+    add v2, v0 -> v0    # Perform addition
+    store v0 -> v3      # Write result
+```
 
-Assuming this simple a setup, there are only two major operations data access and compute. To craft and optimize an algorithm to solve a problem hence involves working with two set of operations only. We need techniques to structure our data access and to structure our compute operations. Firstly the structure should yield in correct solutions and second the strucure should be efficient to be practical. First use techniques come up with a correct solution. Once it's established that a solution exists, use techniques to refine the solution to optimize on instructions and data access.
+### 3.4 Algorithm Design Focus
+Given this simplified model, designing efficient algorithms involves optimizing two aspects:
+1. Minimizing the number of operations (computational complexity)
+2. Organizing data access patterns (data structure design)
 
-## 4. Design Techniques Summary
+The process typically follows two phases:
+1. First, design a correct solution regardless of efficiency
+2. Then, optimize the solution by improving both computational and data access patterns
+
+This forms the foundation for studying algorithm design techniques and data structures.
+
+## 4. Design Techniques
 To sum up, the design techniques to craft and optimize algorithms involves structuring: 
 + [Instructions](instructiondesign/InstructionDesign.md)  instruction optimization, and
 + [Data access](datastructure/README.md)   data/memory access optimization.
