@@ -37,7 +37,7 @@ Think of a computer like your own reading corner. You have:
 
 Here's how it works:
 
-1. Your Magical Bookshelf (This is Memory):
+a. Your Magical Bookshelf (This is Memory):
    - Need a book? Just think of it, and it's in your hand!
    - Each book has a simple label like "v1" or "v2"
    - Each book holds just one number
@@ -49,7 +49,7 @@ Here's how it works:
    write: put a new number inside
    ```
 
-2. Your Brain (This is the CPU):
+b. Your Brain (This is the CPU):
    - You're sitting in your chair, doing mental math
    - Each math problem takes the same time to solve
    - Simple rule: you can only work with numbers from books you're reading
@@ -61,14 +61,14 @@ Here's how it works:
    compare:     which number is bigger?
    ```
 
-3. Problem - adding two numbers:
+c. Problem - adding two numbers:
 ```
 load v1 -> v0       # Grab book v1, check its number
 add v2, v0 -> v0    # Grab book v2, add its number to the first one
 store v0 -> v3      # Write your answer in a new book v3
 ```
 
-That's it! This is how computer memory (RAM) works. Just like your magical bookshelf, a computer can grab any piece of information instantly. Every program is just a different way of reading numbers and writing down answers.
+That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. And there you have it - our two key parts in action: data storage (Memory) and instructions (CPU).
 
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
