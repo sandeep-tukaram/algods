@@ -119,18 +119,20 @@ Just so you know - there's more to computing than just CPU and memory. Things li
 After all we've covered, it really boils down to just two key things. Every algorithm - from the simplest to the most complex - is just playing with these two parts:
 
 1. Data Storage
+   
    Hey, this is just about where we put our stuff! Think about:
    - Where do we keep our values?
    - How do we organize everything?
    - How do we find what we need when we need it?
 
 2. Instructions
+   
    This is the "what do we actually do?" part:
    - What steps do we take?
    - How do we work with our stored data?
    - What order do we do things in?
 
-Here's the cool thing: once you start seeing algorithms this way, a lot of things get clearer. Working on a tough problem? Break it down into these two parts. Ask yourself:
+Once we start seeing algorithms this way, a lot of things get clearer. Working on a tough problem? Break it down into these two parts. Ask yourself:
 - How am I storing my data? Could I organize it better?
 - What am I doing with that data? Could these steps be more efficient?
 
