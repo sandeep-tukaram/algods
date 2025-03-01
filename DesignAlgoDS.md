@@ -70,6 +70,8 @@ store v0 -> v3      # Write your answer in a new book v3
 
 Simple, right? A bookshelf (memory) and a brain (CPU) solve an addition problem. That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. And there you have it - our two key parts in action: data storage (Memory) and instructions (CPU).
 
+This claim might be hard to grasp at this point. The whole point of this page is to reinforce this two-part theme again and again. Read along.
+
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
 1. How can we make our instructions more efficient?
