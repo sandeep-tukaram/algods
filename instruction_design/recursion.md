@@ -44,29 +44,34 @@ Imagine eating a sandwich (yes, really!). How do you tackle it? One bite at a ti
 
 This is the simplest recursive pattern: take one piece off, solve the rest. It's like saying "I'll handle this one thing, and assume the rest will work out." This is exactly what insertion sort does - it takes one number and figures out where to place it in an already-sorted list.
 
-When to use it? When your problem naturally breaks down one piece at a time, like:
-- Adding numbers in a list
-- Counting characters in a string
-- Walking through a linked list
+When to use it? When your problem naturally breaks down into "handle one piece and solve the rest" style, like:
+- Adding numbers in an array (handle the first number, then add up the rest)
+- Finding the length of a string (count the first character, then find the length of the rest)
+- Walking through a linked list (look at the current node, then walk through the rest)
+
+Each of these follows the same pattern: solve for one element, then recursively solve for everything else. It's like saying "I'll handle this piece, and trust that my recursive function will handle the rest!"
 
 ### Divide
-Ever looked up a name in a phone book? (Okay, maybe Google is more your thing, but stick with me!) Here's what you naturally do:
-- Open the book roughly in the middle
-- Is your name before or after?
-- Pick that half and split it again
-- Keep going until you find your name
+Think about merging two sorted piles of cards. Here's what you naturally do:
+- Split your pile roughly in half
+- Sort each half separately
+- Merge the two sorted halves together
+- Keep doing this until you're down to single cards
 
-This is divide pattern in action! Instead of taking one bite, you're cutting the problem in half each time. It's super efficient, for the phonebook example, because each step eliminates half the remaining work. Think about it - you'd never start at page 1 and check every name, right? Elimination is not the only way to derive solution to the original problem. Sometimes the solution to the original problem is dervied by combining solutions to all the subproblems. Mergsort employs solution to all subproblems.
+This is the divide pattern in action! Instead of taking one bite, you're cutting the problem in half each time and then combining solutions. It's super efficient because you can work on both halves independently and then merge them together. This is exactly how mergesort works - divide into smaller sorted arrays, then combine them back up. The key insight is that merging two sorted lists is much easier than sorting from scratch!
+
+When to use it:
+- When your problem can be split into equal-sized subproblems
+- When combining solutions is relatively straightforward
 
 ### Partition
-Let's say you're organizing books by height. Here's a smart way:
-- Pick any book as your "measuring stick" (we call this the pivot)
-- Put shorter books on the left
-- Put taller books on the right
-- Now you have three groups: shorter, pivot, and taller
-- Repeat for each group. The pivot is already in it's sorted place in the original problem.
+Looking up a name in a phone book is a perfect example of partition:
+- Pick a page in the middle as your pivot point
+- Is your name before or after? We are working with two partitions here. Name appears in one of them only
+- Focus only on that partition and pick a new pivot - the middle.
+- Keep going until you find your name
 
-This is partition pattern - using one element to split things into three parts: less than, equal to, and greater than. It's like having a sorting party where everyone knows exactly where to go based on the height of that one book.
+This is partition pattern - using a pivot to eliminate parts of the problem that you know can't contain your solution. It's like playing a smart guessing game where each guess cuts away a big chunk of possibilities.
 
 This pattern is great when:
 - You need to organize things around a specific value
