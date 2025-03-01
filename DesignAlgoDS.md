@@ -61,14 +61,14 @@ b. Your Brain (This is the CPU):
    compare:     which number is bigger?
    ```
 
-c. Problem - adding two numbers:
+c. Lets see how this basic system solve a problem : 
 ```
 load v1 -> v0       # Grab book v1, check its number
 add v2, v0 -> v0    # Grab book v2, add its number to the first one
 store v0 -> v3      # Write your answer in a new book v3
 ```
 
-That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. And there you have it - our two key parts in action: data storage (Memory) and instructions (CPU).
+Simple, right? A bookshelf (memory) and a brain (CPU) solve an addition problem. That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. And there you have it - our two key parts in action: data storage (Memory) and instructions (CPU).
 
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
