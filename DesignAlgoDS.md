@@ -5,7 +5,7 @@ You know that feeling when you first look at an algorithm textbook? Everything s
 
 Look, I get it - diving deep into algorithms takes time and patience. Sometimes it feels like everyone else is zooming ahead while you're still figuring things out. That pressure to keep up? Yeah, we've all felt it. But here's the thing: racing through concepts just to "keep up" isn't the way to go.
 
-But here's the thing: I decided to take a different path. I spent time diving deep into textbooks, research papers, and blogs. Sure, there's a risk of "falling behind," but I've made peace with that. This is my way of breaking free from that rat race, even if just a bit. I'll be honest - I'm totally fascinated by this stuff, and I think it's worth the time to really get it.
+Here's the thing: recently, I decided to dive deep into textbooks, research papers, and blogs. Sure, there's a risk of "falling behind," but I've made peace with that. This is my way of breaking free from that rat race, even if just a bit. I'll be honest - I'm totally fascinated by this stuff, and I think it's worth the time to really get it.
 
 I hope I can encourage you to do the same while saving lot of time and effort.
 
