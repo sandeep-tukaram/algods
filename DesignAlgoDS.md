@@ -29,7 +29,7 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 The two-part pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? 
 
 ### Computer Model
-Let's understand how computers work using something familiar - a reading room! And guess what? This perfectly shows our two-part theme in action: we've got a place to store stuff (data storage) and a place to work with it (instructions).
+Let's understand how computers work using an anology - a reading room! And guess what? This perfectly shows our two-part theme in action: we've got a place to store stuff (data storage) and a place to work with it (instructions).
 
 Imagine you're in a reading room with:
 1. A desk (this is like the CPU - where we follow instructions)
