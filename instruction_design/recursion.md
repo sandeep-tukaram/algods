@@ -44,13 +44,6 @@ Imagine eating a sandwich (yes, really!). How do you tackle it? One bite at a ti
 
 This is the simplest recursive pattern: take one piece off, solve the rest. It's like saying "I'll handle this one thing, and assume the rest will work out." This is exactly what insertion sort does - it takes one number and figures out where to place it in an already-sorted list.
 
-When to use it? When your problem naturally breaks down into "handle one piece and solve the rest" style, like:
-- Adding numbers in an array (handle the first number, then add up the rest)
-- Finding the length of a string (count the first character, then find the length of the rest)
-- Walking through a linked list (look at the current node, then walk through the rest)
-
-Each of these follows the same pattern: solve for one element, then recursively solve for everything else. It's like saying "I'll handle this piece, and trust that my recursive function will handle the rest!"
-
 ### Divide
 Think about merging two sorted piles of cards. Here's what you naturally do:
 - Split your pile roughly in half
@@ -60,10 +53,6 @@ Think about merging two sorted piles of cards. Here's what you naturally do:
 
 This is the divide pattern in action! Instead of taking one bite, you're cutting the problem in half each time and then combining solutions. It's super efficient because you can work on both halves independently and then merge them together. This is exactly how mergesort works - divide into smaller sorted arrays, then combine them back up. The key insight is that merging two sorted lists is much easier than sorting from scratch!
 
-When to use it:
-- When your problem can be split into equal-sized subproblems
-- When combining solutions is relatively straightforward
-
 ### Partition
 Looking up a name in a phone book is a perfect example of partition:
 - Pick a page in the middle as your pivot point
@@ -71,11 +60,6 @@ Looking up a name in a phone book is a perfect example of partition:
 - Focus only on that partition and pick a new pivot - the middle.
 - Keep going until you find your name
 
-This is partition pattern - using a pivot to eliminate parts of the problem that you know can't contain your solution. It's like playing a smart guessing game where each guess cuts away a big chunk of possibilities.
+This is partition pattern - using a pivot to split a problem into subproblems usually referred as paritions. The above example, to dervive solution to the original problem, disregards one of the partitions and focues on the other. Problems may use more than one piviot, meaning more than two paritions, and solve all partitions and dervive the solution to the original problem.
 
-This pattern is great when:
-- You need to organize things around a specific value
-- You're comfortable with the fact that splits might not be even
-- You want to divide things into logical groups
-
-The beauty of these patterns is that once you start seeing them, you'll notice them everywhere - from sorting algorithms to real-world problem solving.
+The beauty of these patterns is that once you start seeing them, you'll notice them everywhere - from sorting algorithms to complex real-world problems.
