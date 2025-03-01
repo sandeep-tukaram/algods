@@ -74,11 +74,11 @@ We can use the workspace model (computer) to come up with an alogrithm to add tw
    a new book at v3
 ```
 
-That's really all there is to it! Every computer program, like the reading room above, boils down to these two fundamental operations:
+That's really all there is to it! Every algorithm, boils down to these two fundamental operations:
 1. Getting and storing data in memory (like our bookshelf)
 2. Processing that data with instructions (like our desk work)
 
-This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name. What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, we'll apply the two-part perspective repeatedly to break down even the most complex algorithms. Let's keep exploring!
+The simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name. What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, we'll apply the two-part perspective repeatedly to break down even the most complex algorithms. Let's keep exploring!
 
 --- 
 
