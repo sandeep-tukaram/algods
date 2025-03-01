@@ -1,7 +1,7 @@
 # Designing Algorithms: Data Storage & Instructions
 
 ## Introduction
-You know that feeling when you first look at an algorithm textbook? Everything seems like magic, right? Like some genius just had an "aha!" moment and came up with these brilliant solutions. I've been there too, and I bet most of us have. The trouble is, we often end up just memorizing algorithms instead of really understanding the craft behind the design. That's not great.
+You know that feeling when you first look at an algorithm textbook? Everything seems like magic, right? Like some genius just had an "aha!" moment and came up with these brilliant solutions. I've been there too, and I bet most of us have. The trouble is, we often end up just memorizing algorithms instead of really understanding the craft. That's not great.
 
 Look, I get it - diving deep into algorithms takes time and patience. Sometimes it feels like everyone else is zooming ahead while you're still figuring things out. That pressure to keep up? Yeah, we've all felt it. But here's the thing: racing through concepts just to "keep up" isn't the way to go.
 
