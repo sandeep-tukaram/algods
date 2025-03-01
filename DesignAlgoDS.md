@@ -30,7 +30,7 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? I call it two-part theme. Let's explore. 
 
 ### 3.2 Computer Model and Basic Operations
-Algorithms run on computer. And it is important to have a mental model of computer. It is interesting to note the play of two-part theme in conceptualizing the mental model. Let me make this point using a bookshelf model of a computer. 
+Algorithms run on computers, and it's important to have a mental model of how they work. The two-part theme we discussed earlier plays a key role in conceptualizing this mental model. Let me illustrate this using a bookshelf analogy for how computers work.
 
 Think of a computer like your own reading corner. You have:
 - A comfy chair
