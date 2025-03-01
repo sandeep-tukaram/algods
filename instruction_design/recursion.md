@@ -1,4 +1,4 @@
-# Recursio/Subproblem Technique
+# Recursion/Subproblem Technique
 
 ## The Idea
 When people talk about recursion, they often get caught up in the mathematical definition. Let's think about it differently - it's really just about solving problems by breaking them into smaller versions of themselves. Think of it like solving a big puzzle by first figuring out smaller pieces of it.
