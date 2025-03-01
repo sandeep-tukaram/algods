@@ -10,10 +10,10 @@ The core idea is beautifully simple and worth repeating:
 
 Every recursive solution follows this pattern:
 ```
-solve big_problem {
-    1. Break into smaller subproblems
-    2. Solve each subproblem (using the same pattern!)
-    3. Combine solutions to solve the original problem
+solve original_problem {
+    1. Break into smaller subproblems and residuals. Residuals are not the smaller versions of the original problem.
+    2. Solve each subproblem. Actually assume solved. This is the Trick!
+    3. Combine solutions and residuals. Derive the solution to the original_problem.
 }
 ```
 
