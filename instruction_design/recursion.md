@@ -35,7 +35,7 @@ Remember: The key to understanding recursion is being comfortable with this "ass
 ## Patterns
 Let's explore three main ways to break down problems recursively, using everyday examples you're familiar with:
 
-### Incremental Pattern
+### Incremental Split
 Imagine eating a sandwich (yes, really!). How do you tackle it? One bite at a time, right? This is exactly how incremental recursion works:
 - You have a big sandwich (your problem)
 - You take one bite (handle one piece)
@@ -49,7 +49,7 @@ When to use it? When your problem naturally breaks down one piece at a time, lik
 - Counting characters in a string
 - Walking through a linked list
 
-### Divide Pattern
+### Divide
 Ever looked up a name in a phone book? (Okay, maybe Google is more your thing, but stick with me!) Here's what you naturally do:
 - Open the book roughly in the middle
 - Is your name before or after?
@@ -58,7 +58,7 @@ Ever looked up a name in a phone book? (Okay, maybe Google is more your thing, b
 
 This is divide pattern in action! Instead of taking one bite, you're cutting the problem in half each time. It's super efficient, for the phonebook example, because each step eliminates half the remaining work. Think about it - you'd never start at page 1 and check every name, right? Elimination is not the only way to derive solution to the original problem. Sometimes the solution to the original problem is dervied by combining solutions to all the subproblems. Mergsort employs solution to all subproblems.
 
-### Partition Pattern
+### Partition
 Let's say you're organizing books by height. Here's a smart way:
 - Pick any book as your "measuring stick" (we call this the pivot)
 - Put shorter books on the left
