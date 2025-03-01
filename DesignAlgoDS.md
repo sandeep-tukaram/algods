@@ -9,7 +9,7 @@ Here's the thing: recently, I decided to dive deep into textbooks, research pape
 
 I hope I can encourage you to do the same while saving lot of time and effort.
 
-## Two-Part Approach
+## Two-Part Approach - Data and Instructions
 Let's keep this simple and straightforward! We're going to break everything down into manageable pieces. And here's the key thing to remember: every algorithm - and I mean every single one - comes down to just two parts: how we store our data, and the operations we perform on it. Let's see how this plays out, starting with the basics and working our way up to tougher problems.
 
 ### Computer and Algorithms
@@ -114,24 +114,20 @@ Again, the cool two-part insight: when you're trying to make an algorithm better
 Just so you know - there's more to computing than just CPU and memory. Things like reading files or making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage and instructions.
 
 ## Summary
-After all we've covered, it really boils down to just two key things. Every algorithm - from the simplest to the most complex - is just playing with these two parts:
+Every algorithm - from the simplest to the most complex - is just playing with these two parts:
 
-1. Data Storage
-   
-   Hey, this is just about where we put our stuff! Think about:
+1. Data Storage & Organization   
    - Where do we keep our values?
-   - How do we organize everything?
-   - How do we find what we need when we need it?
+   - How do we organize everything? Usually a tradeoff between write and read.
 
 2. Instructions
-   
-   This is the "what do we actually do?" part:
    - What steps do we take?
    - How do we work with our stored data?
    - What order do we do things in?
+   - How do we get rid of redundant instructions?
 
 Once we start seeing algorithms this way, a lot of things get clearer. Working on a tough problem? Break it down into these two parts. Ask yourself:
 - How am I storing my data? Could I organize it better?
 - What am I doing with that data? Could these steps be more efficient?
 
-That's really all there is to it! No matter how complicated an algorithm might look at first, remember - it's just some instructions working with stored data. Keep this in mind, and you'll start seeing patterns everywhere.
+That's really all there is to it! No matter how complicated an algorithm might look at first, remember - it's just some instructions working with stored data. Keep this in mind, and you'll start seeing patterns everywhere. Both are easier said than done. But a framework to approach a problem always makes life easier.
