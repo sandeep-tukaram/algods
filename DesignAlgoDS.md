@@ -1,4 +1,4 @@
-# Designing Algorithms: Data Storage & Instructions
+# Designing Algorithms: Data & Instructions
 
 ## Introduction
 You know that feeling when you first look at an algorithm textbook? Everything seems like magic, right? Like some genius just had an "aha!" moment and came up with these brilliant solutions. I've been there too, and I bet most of us have. The trouble is, we often end up just memorizing algorithms instead of really understanding the craft. That's not great.
@@ -9,10 +9,11 @@ Recently, I decided to dive deep into textbooks, research papers, and blogs. Sur
 
 I hope I can encourage you to do the same while saving lot of time and effort.
 
-## Two-Parts - Data and Instructions
+---
+
+## Basics - Computer and Algorithms
 Let's keep this simple and straightforward! We're going to break everything down into manageable pieces. And here's the key thing to remember: every algorithm - and I mean every single one - comes down to just two parts: how we store our data, and the operations we perform on it. Let's see how this plays out, starting with the basics and working our way up to tougher problems.
 
-### Basics - Computer and Algorithms
 In a simple sentence: an algorithm is just a set of steps working with data solving a problem specification. That's it! Let's look at a super simple example:
 
 ```
@@ -27,14 +28,14 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 
 This two-part pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? 
 
-#### Computer Model
+### Computer Model
 Let's understand how computers work using something familiar - a reading room! And guess what? This perfectly shows our two-part theme in action: we've got a place to store stuff (data storage) and a place to work with it (instructions).
 
 Imagine you're in a reading room with:
 1. A desk (this is like the CPU - where we follow instructions)
 2. A magical bookshelf (this is like Memory - where we store data)
 
-##### The Magical Bookshelf (Memory)
+#### The Magical Bookshelf (Memory)
 Think of memory like a bookshelf where:
 - Each shelf spot has a name (like "v1" or "temp")
 - Each spot holds one book with just one number
@@ -49,7 +50,7 @@ WRITE:  Put a new number in a book
 
 Pretty simple, right? It's just like having an endless bookshelf where you can grab or store books super quickly! This is our first main part - data storage in action.
 
-##### Your Desk (CPU)
+#### Your Desk (CPU)
 This is where you do all your work - it's the instructions part of our two-part theme:
 - You can only work with numbers from books you've taken from the shelf
 - All basic calculations take the same time
@@ -62,7 +63,7 @@ DECIDE:    If something is true/false
 
 Think of it as your personal workspace - but remember, you can only work with what you've grabbed from the shelf! Lets call it workspace model of computer.
 
-#### Algorithm - adding two numbers
+### Algorithm - adding two numbers
 We can use the workspace model (computer) to add two numbers:
 ```
 1. Get book from v1    # Data storage: reading from memory
@@ -79,7 +80,9 @@ That's really all there is to it! Every computer program, like the reading room 
 
 This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name. What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, we'll apply the two-part perspective repeatedly to break down even the most complex algorithms. Let's keep exploring!
 
-## Design Techniques - Problems and Algorithms
+--- 
+
+## Designing Techniques - Problems and Algorithms
 With our simplfied model of computer and algorithm, let's talk about solving problems. We use computers to solve problems. It is in the context of problem solving that the design aspect of algorithm becomes very important. When we solve a problem, we care about two main things: making sure our solution works (correctness) and that it works well (efficiency).
 
 ### The Two-Part Theme (Again!)
@@ -106,6 +109,8 @@ Most of the time, we solve problems in two phases:
    - Consider better ways to organize our data
    - Sometimes a complete redesign is worth it
 
+---
+
 ## Summary
 Every algorithm - from the simplest to the most complex - is just playing with these two parts:
 
@@ -124,6 +129,8 @@ Once we start seeing algorithms this way, a lot of things get clearer. Working o
 - What am I doing with that data? Could these steps be more efficient?
 
 That's really all there is to it! No matter how complicated an algorithm might look at first, remember - it's just some instructions working with stored data. Keep this in mind, and you'll start seeing patterns everywhere. Both are easier said than done. But a framework to approach a problem always makes life easier.
+
+--- 
 
 ## Scope
 Just so you know - there's more to computing than just CPU and memory, what we refer to as the two-parts. Reading and writing files, making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage (memory) and instructions.
