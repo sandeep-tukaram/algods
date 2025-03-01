@@ -64,7 +64,7 @@ DECIDE:    If something is true/false
 Think of it as your personal workspace - but remember, you can only work with what you've grabbed from the shelf! Lets call it workspace model of computer.
 
 ### Algorithm - adding two numbers
-We can use the workspace model (computer) to add two numbers:
+We can use the workspace model (computer) to come up with an alogrithm to add two numbers:
 ```
 1. Get book from v1    # Data storage: reading from memory
 2. Get book from v2    # Data storage: reading again
