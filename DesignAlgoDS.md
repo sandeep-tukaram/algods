@@ -23,8 +23,8 @@ v1 + v2             # Step 3: Add values from memory locations v1 and v2
 ```
 
 See what we did there? Even in this tiny example, we can spot our two main parts:
-1. Data storage: We're using v1 and v2 to keep our values somewhere
-2. Instructions: We're doing things with those values (storing them and adding them)
+1. Data storage: We're using v1 and v2 to keep our values somewhere. They care called variables.
+2. Instructions: We add the variables to obtain the sum.
 
 This two-part pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? 
 
