@@ -95,7 +95,7 @@ Remember our favorite theme? It shows up here too! When designing algorithms, we
   - The structures we'll use
   - How we'll access what we need
 
-Most of the time, we approach problem-solving in two phases:
+Most of the time, we solve problems in two phases:
 1. First Draft: Get a working solution
    - Focus on correctness
    - Don't worry too much about speed
