@@ -75,11 +75,11 @@ Let's see how both parts come together to add two numbers:
    a new book at v3
 ```
 
-That's really all there is to it! Every computer program, like the reading room above, is just these two parts working together:
-1. Getting books from the shelf (Memory - data storage)
-2. Working with their numbers at the desk (CPU - instructions)
+That's really all there is to it! Every computer program, like the reading room above, boils down to these two fundamental operations:
+1. Getting and storing data in memory (like our bookshelf)
+2. Processing that data with instructions (like our desk work)
 
-This simple model (cpu + memory) is called the RAM model. But hey, don't get hung up on the name - if it helps think reading room! It's that straightforward. And remember, everything we do with computers comes down to these two parts: storing our data (in books on the bookshelf) and processing it (at the desk).
+This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name - the reading room analogy works great! What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between these two parts: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, you'll see how this two-part perspective helps break down even the most complex algorithms. Let's keep exploring!
 
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
