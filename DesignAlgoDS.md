@@ -9,7 +9,7 @@ Recently, I decided to dive deep into textbooks, research papers, and blogs. Sur
 
 I hope I can encourage you to do the same while saving lot of time and effort.
 
-## Two-Part Approach - Data and Instructions
+## Two-Parts - Data and Instructions
 Let's keep this simple and straightforward! We're going to break everything down into manageable pieces. And here's the key thing to remember: every algorithm - and I mean every single one - comes down to just two parts: how we store our data, and the operations we perform on it. Let's see how this plays out, starting with the basics and working our way up to tougher problems.
 
 ### Basics - Computer and Algorithms
