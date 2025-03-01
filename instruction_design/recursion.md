@@ -8,7 +8,7 @@ The core idea is beautifully simple and worth repeating:
 2. Solve those smaller subproblems
 3. Combine their solutions to solve your original problem
 
-Every recursive solution follows this pattern:
+Recursive solution follows a similar pattern:
 ```
 solve original_problem {
     1. Break into smaller subproblems and residuals. Residuals are not the smaller versions of the original problem.
