@@ -134,3 +134,9 @@ That's really all there is to it! No matter how complicated an algorithm might l
 
 ## Scope
 Just so you know - there's more to computing than just CPU and memory, what we refer to as the two-parts. Reading and writing files, making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage (memory) and instructions.
+
+--- 
+
+Next
++ [Structuring Instructions](instruction_design/InstructionDesign.md)
++ [Organizing Data](datastructure/README.md)
