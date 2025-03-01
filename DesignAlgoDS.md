@@ -26,7 +26,7 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 1. Data storage: We're using v1 and v2 to keep our values somewhere. They care called variables.
 2. Instructions: We add the variables to obtain the sum.
 
-This two-part pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? 
+The two-part pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? 
 
 ### Computer Model
 Let's understand how computers work using something familiar - a reading room! And guess what? This perfectly shows our two-part theme in action: we've got a place to store stuff (data storage) and a place to work with it (instructions).
