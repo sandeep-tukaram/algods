@@ -82,29 +82,35 @@ That's really all there is to it! Every computer program, like the reading room 
 This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name - the reading room analogy works great! What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between these two parts: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, you'll see how this two-part perspective helps break down even the most complex algorithms. Let's keep exploring!
 
 ## 4. Design Techniques
-We touched upon it briefly but not actually discussed what it means to solve problems, with our two-part model of a computer - the RAM model. When we're designing algorithms, we're always thinking about our two key parts:
-1. How can we make our instructions more efficient?
-2. What's the best way to organize our data?
+Now that we understand what algorithms are and how computers work, let's talk about designing solutions to problems. When we're solving a problem, we care about two main things: making sure our solution works (correctness) and making sure it works well (efficiency).
 
-Let's look at how we can make each one better:
+### The Two-Part Theme (Again!)
+Remember our favorite theme? It shows up here too! When designing algorithms, we need to think about:
 
-1. Instructions: Making Our Steps Smarter
++ [How to Structure Our Instructions](instructiondesign/InstructionDesign.md)
+  - The steps our algorithm will follow
+  - The logic and flow of our solution
+  - The operations we'll perform
 
-   This is all about how we handle our operations - making them more efficient and clever. Want to learn more about crafting better instructions? 
++ [How to Organize Our Data](datastructure/README.md)
+  - The way we'll store information
+  - The structures we'll use
+  - How we'll access what we need
 
-2. Data Organization: Choosing the Right Structure
+Most of the time, we approach problem-solving in two phases:
+1. First Draft: Get a working solution
+   - Focus on correctness
+   - Don't worry too much about speed
+   - Just make it work!
 
-   This is where we get strategic about how we store and access our data. Different problems need different approaches! 
+2. Optimization: Make it better
+   - Look for ways to speed up our instructions
+   - Consider better ways to organize our data
+   - Sometimes a complete redesign is worth it
 
-Usually we tackle problems in two steps:
-1. First, figure out how to solve it (get those instructions right!)
-2. Then, make it better (smarter instructions, better data organization)
-
-Again: every algorithm improvement comes from either making our instructions more efficient or organizing our data more cleverly - or both!
-
-Both the parts are discussed in details 
-+ [Instructions](instructiondesign/InstructionDesign.md)
-+ [Data access](datastructure/README.md)
+Again, the cool two-part insight: when you're trying to make an algorithm better, you're always doing one (or both) of these things:
+- Making your instructions more clever
+- Organizing your data better
 
 ## 5. Scope Note
 Just so you know - there's more to computing than just CPU and memory. Things like reading files or making network calls add extra complexity. But for now, let's stick to our simple model focusing on our two core parts: data storage and instructions.
