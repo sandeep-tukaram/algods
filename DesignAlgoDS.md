@@ -15,7 +15,7 @@ Let's keep this simple and straightforward! We're going to break everything down
 ## 3. Core Concepts
 
 ### 3.1 Simplified View
-Want to know the simplest way to think about algorithms? Here it is: an algorithm is just a set of steps working with data solving a problem specification. That's it! Let's look at a super simple example:
+In a simple sentence: an algorithm is just a set of steps working with data solving a problem specification. That's it! Let's look at a super simple example:
 
 ```
 v1 = 2              # Step 1: Store the value 2 in memory location v1
