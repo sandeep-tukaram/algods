@@ -42,7 +42,7 @@ Imagine eating a sandwich (yes, really!). How do you tackle it? One bite at a ti
 - Now you have a slightly smaller sandwich (n-1 problem)
 - Keep going until you're down to the last bite
 
-This is the simplest recursive pattern: take one piece off, solve the rest. It's like saying "I'll handle this one thing, and assume the rest will work out." This is exactly what insertion sort does - it takes one number and figures out where to put it in an already-sorted list.
+This is the simplest recursive pattern: take one piece off, solve the rest. It's like saying "I'll handle this one thing, and assume the rest will work out." This is exactly what insertion sort does - it takes one number and figures out where to place it in an already-sorted list.
 
 When to use it? When your problem naturally breaks down one piece at a time, like:
 - Adding numbers in a list
