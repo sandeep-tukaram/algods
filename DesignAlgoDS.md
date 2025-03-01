@@ -85,12 +85,12 @@ Now that we understand what algorithms are and how computers work, let's talk ab
 ### The Two-Part Theme (Again!)
 Remember our favorite theme? It shows up here too! When designing algorithms, we need to think about:
 
-+ [How to Structure Our Instructions](instructiondesign/InstructionDesign.md)
++ [How to structure our Instructions](instructiondesign/InstructionDesign.md)
   - The steps our algorithm will follow
   - The logic and flow of our solution
   - The operations we'll perform
 
-+ [How to Organize Our Data](datastructure/README.md)
++ [How to organize our Data](datastructure/README.md)
   - The way we'll store information
   - The structures we'll use
   - How we'll access what we need
