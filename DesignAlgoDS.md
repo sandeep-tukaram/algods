@@ -27,9 +27,11 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 1. Data storage: We're using v1 and v2 to keep our values somewhere
 2. Instructions: We're doing things with those values (storing them and adding them)
 
-This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right?
+This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? I call it two-part theme. Let's explore. 
 
 ### 3.2 Computer Model and Basic Operations
+Algorithms run on computer. And it is important to have a mental model of computer. It is interesting to note the play of two-part theme in conceptualizing the mental model. Let me make this point using a bookshelf model of a computer. 
+
 Think of a computer like your own reading corner. You have:
 - A comfy chair
 - A magical bookshelf
@@ -68,9 +70,9 @@ add v2, v0 -> v0    # Grab book v2, add its number to the first one
 store v0 -> v3      # Write your answer in a new book v3
 ```
 
-Simple, right? A bookshelf (memory) and a brain (CPU) solve an addition problem. That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. And there you have it - our two key parts in action: data storage (Memory) and instructions (CPU).
+Simple, right? A bookshelf (memory) and a brain (CPU) solve an addition problem. That's it! This is how computers work at their core: Memory holds our data (just like that magical bookshelf), while the CPU follows our instructions to process it. There you have it - our two key parts in action: data storage (Memory) and instructions (CPU). This two-part model is popularly known as RAM model - cpu and memory. If it's hard to remember RAM model, think bookshelf.
 
-This claim might be hard to grasp at this point. The whole point of this page is to reinforce this two-part theme again and again. Read along.
+Every program, no matter how complex, is just a dance between these two parts: storing values in memory and processing them with the CPU. This claim might be hard to grasp at this point. The whole point of this page is to reinforce this two-part theme again and again. Read along.
 
 ## 4. Design Techniques
 When we're designing algorithms, we're always thinking about our two key parts:
