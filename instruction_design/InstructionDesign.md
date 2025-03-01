@@ -1,20 +1,19 @@
 # Instruction design techniques
 
-Algorithms are used to solve problems. And it is in this context that designing algorithm becomes important. Algorithms are made up of instructions and data. This page dwells upon the instruction part of algorithm and design techniques which one can apply. A CPU architecture specifies many instructions - control, math etc. With assembly languges, one works with low level cpu instructions. A high level programming language is a more comfortable space since it provides abstract constructs. This page will deal with higher level languages (HLL) - in fact pseudocode. 
+Algorithms are used to solve problems by manipulating data through a sequence of well-defined instructions. Understanding how to design these instructions is crucial for effective algorithm development. While CPUs provide low-level instructions (arithmetic, control flow, data movement), and assembly languages work directly with these instructions, higher-level programming languages offer more abstract constructs that make algorithm design more intuitive.
 
-So, how do we structure the instructions? There are techniques discovered and discussed in popular textbooks. 
+We will focus on instruction design patterns in high-level languages and pseudocode, exploring how we can structure instructions to solve problems efficiently.
 
-Common technique for most of the problems.
-+ [Recursion/Subproblems approach](recursion.md)
+Common instruction design patterns:
++ [Recursion/Subproblems approach](recursion.md) - Breaking down problems into smaller, similar subproblems. There are many ways to split a problem into subproblems. Divide and conquer is a popular technique.
 
+Optimization-focused patterns:
++ [Dynamic programming](dynamicprogramming.md) - Storing and reusing intermediate results
++ [Greedy programming](greedy.md) - Making locally optimal choices at each step
 
-Techniques for Optimization problems
-+ [Dynamic programming](dynamicprogramming.md)
-+ [Greedy programming](greedy.md)
-
-
-Randomized algorithm
-+ Randomized quicksort -> uses randomization to increase the probably of balanced partition.
+Probabilistic instruction patterns:
++ Randomized algorithms - Using random choices to improve average-case performance
+  - Example: Randomized quicksort - randomizes pivot selection for better partitioning
 
 ## Quick Links 
-[UP](../DesignAlgoDS.md)
+[# Designing Algorithms: Data & Instructions](../DesignAlgoDS.md)
