@@ -86,7 +86,7 @@ The simple model (cpu + memory) is called the RAM (Random Access Machine) model.
 With our simplfied model of computer and algorithm, let's talk about solving problems. Afterall, we use computers to solve problems. It is in the context of problem solving that the design aspect of algorithm becomes very important. When we solve a problem, we care about two main things: making sure our solution works (correctness) and that it works well (efficiency).
 
 ### The Two-Part Theme (Again!)
-Remember our favorite theme? It shows up here too! After an algorithm is composed of two parts - data and instructions. Naturally, designing an algorithm is then confined to the data and the instructions involved. When designing algorithms, we need to think about:
+Remember our favorite theme? It shows up here too! An algorithm is composed of two parts - data and instructions. Naturally, designing an algorithm is then confined to the data and the instructions involved. When designing algorithms, we need to think about:
 
 + [How to structure our Instructions](instruction_design/InstructionDesign.md)
   - The steps our algorithm will follow
