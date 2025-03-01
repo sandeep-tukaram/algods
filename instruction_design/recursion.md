@@ -32,7 +32,7 @@ Remember: The key to understanding recursion is being comfortable with this "ass
 
 --- 
 
-## Patterns
+## Subproblem Patterns
 Let's explore three main ways to break down problems recursively, using everyday examples you're familiar with:
 
 ### Incremental Split
