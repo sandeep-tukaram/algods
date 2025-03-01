@@ -9,12 +9,10 @@ But here's the thing: I decided to take a different path. I spent time diving de
 
 I hope I can encourage you to do the same while saving lot of time and effort.
 
-## Approach
+## Two-Part Approach
 Let's keep this simple and straightforward! We're going to break everything down into manageable pieces. And here's the key thing to remember: every algorithm - and I mean every single one - comes down to just two parts: how we store our data, and the operations we perform on it. Let's see how this plays out, starting with the basics and working our way up to tougher problems.
 
-## Core Concepts
-
-### Simplified View
+### Computer and Algorithms
 In a simple sentence: an algorithm is just a set of steps working with data solving a problem specification. That's it! Let's look at a super simple example:
 
 ```
@@ -64,7 +62,7 @@ DECIDE:    If something is true/false
 
 Think of it as your personal workspace - but remember, you can only work with what you've grabbed from the shelf! See how our two parts work together? We store data in books on the shelf and process it at the desk.
 
-#### Example: Adding Two Numbers
+### Algorithm Example: Adding Two Numbers
 Let's see how both parts come together to add two numbers:
 ```
 1. Get book from v1    # Data storage: reading from memory
@@ -81,7 +79,7 @@ That's really all there is to it! Every computer program, like the reading room 
 
 This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name - the reading room analogy works great! What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between these two parts: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, you'll see how this two-part perspective helps break down even the most complex algorithms. Let's keep exploring!
 
-## Design Techniques
+## Design Techniques - Problems and Algorithms
 Now that we understand what algorithms are and how computers work, let's talk about designing solutions to problems. When we're solving a problem, we care about two main things: making sure our solution works (correctness) and making sure it works well (efficiency).
 
 ### The Two-Part Theme (Again!)
