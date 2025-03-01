@@ -27,7 +27,7 @@ See what we did there? Even in this tiny example, we can spot our two main parts
 1. Data storage: We're using v1 and v2 to keep our values somewhere
 2. Instructions: We're doing things with those values (storing them and adding them)
 
-This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? I call it two-part theme. Let's explore. 
+This same pattern shows up everywhere - whether you're adding two numbers or building a complex search algorithm. Pretty neat, right? Let's call it two-part theme. Let's explore. 
 
 ### 3.2 Computer Model and Basic Operations
 Let's understand how computers work using something familiar - a reading room! And guess what? This perfectly shows our two-part theme in action: we've got a place to store stuff (data storage) and a place to work with it (instructions).
@@ -82,7 +82,7 @@ That's really all there is to it! Every computer program, like the reading room 
 This simple model (cpu + memory) is called the RAM (Random Access Machine) model. But hey, don't get hung up on the name - the reading room analogy works great! What's important is that every computation from a simple calculator to a complex AI system, is fundamentally a choreography between these two parts: organizing data in memory and processing it through CPU instructions. This might seem like an oversimplification right now, but as we continue, you'll see how this two-part perspective helps break down even the most complex algorithms. Let's keep exploring!
 
 ## 4. Design Techniques
-When we're designing algorithms, we're always thinking about our two key parts:
+We touched upon it briefly but not actually discussed what it means to solve problems, with our two-part model of a computer - the RAM model. When we're designing algorithms, we're always thinking about our two key parts:
 1. How can we make our instructions more efficient?
 2. What's the best way to organize our data?
 
