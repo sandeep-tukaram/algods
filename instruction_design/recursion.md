@@ -4,16 +4,21 @@
 When people talk about recursion, they often get caught up in the mathematical definition. Let's think about it differently - it's really just about solving problems by breaking them into smaller versions of themselves. Subproblems is the big idea. Think of it like solving a big puzzle by first figuring out smaller pieces of it.
 
 The core idea is beautifully simple and worth repeating:
-1. Break your problem into smaller subproblems
-2. Solve those smaller subproblems
+1. Break your problem into smaller subproblems and residuals. Residuals are not the smaller versions of the original problem.
+2. Solve those smaller subproblems. Actually assume it solved. This is the Trick!
 3. Combine their solutions to solve your original problem
 
-Recursive solution follows a similar pattern:
+In a pseudocode:
 ```
-solve original_problem {
-    1. Break into smaller subproblems and residuals. Residuals are not the smaller versions of the original problem.
-    2. Solve each subproblem. Actually assume solved. This is the Trick!
-    3. Combine solutions and residuals. Derive the solution to the original_problem.
+solve problem(original) {
+    // handle base case. 
+    1. usually the subproblem size equals 1.
+
+    // handle recursion - for all subproblems satisfying conditionals, if any
+    2. problem(subproblem1), problem(subproblem2).. etc. 
+
+    // derive solution to original problem
+    3. Combine solutions of the subproblems and the residuals.
 }
 ```
 
