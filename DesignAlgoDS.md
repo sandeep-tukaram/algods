@@ -85,7 +85,7 @@ With our simplfied model of computer and algorithm, let's talk about solving pro
 ### The Two-Part Theme (Again!)
 Remember our favorite theme? It shows up here too! After an algorithm is composed of two parts - data and instructions. Naturally, designing an algorithm is then confined to the data and the instructions involved. When designing algorithms, we need to think about:
 
-+ [How to structure our Instructions](instructiondesign/InstructionDesign.md)
++ [How to structure our Instructions](instruction_design/InstructionDesign.md)
   - The steps our algorithm will follow
   - The logic and flow of our solution
   - The operations we'll perform
