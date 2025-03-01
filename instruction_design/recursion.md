@@ -1,31 +1,50 @@
-## Recursion/Subproblems approach
-Recursion approach is probably the most prominent also basis of other techniques such as dynamic programming. Recursion is a mathematical term. What helped me more is to think in terms of subproblems. The big idea is simple. Split a bigger problem into smaller subproblems. Then, derive the solution of the original problem using the solutions to the subproblems.
+# Recursion Technique
 
-General pseudocode has a recursive structure.
+## The Idea
+When people talk about recursion, they often get caught up in the mathematical definition. Let's think about it differently - it's really just about solving problems by breaking them into smaller versions of themselves. Think of it like solving a big puzzle by first figuring out smaller pieces of it.
+
+The core idea is beautifully simple and worth repeating:
+1. Break your problem into smaller subproblems
+2. Solve those smaller subproblems
+3. Combine their solutions to solve your original problem
+
+Every recursive solution follows this pattern:
 ```
-    original problem  {
-        solve subproblem1, subproblem2 ...         
-        derive solution to the original problem reusing solution to the subproblems.
-    }
+solve big_problem {
+    1. Break into smaller subproblems
+    2. Solve each subproblem (using the same pattern!)
+    3. Combine solutions to solve the original problem
+}
 ```
 
-Let me illustrate the thought process with a small example. Say, we have a problem to sort an array of size n. The given problem size is n. 
-For the sake of argument, lets say we have an algorithm to sort the numbers. The question is would that algorithm also apply to a problem of say size 
-n-1 ? The intuitive answer is yes. It should be. If I can sort n elements, using the same algorithm I should be able to sort a problem with n-1 elements. 
+### Sorting Example
+Let's make this concrete with a classic example: sorting an array of numbers. Here's the key insight - if you can sort n numbers, you can definitely sort n-1 numbers, right? This is the recursive thinking we're looking for!
 
-Take a pause here and think about what is being said. 
+Take a moment to let that sink in - it's a powerful idea.
 
-In a pseudocode notation, lets say we have a function sort(A) which encapsulates an sorting algorithm. Ideally this will be generic, doesn't matter what the size of A is. 
+Let's break it down with some pseudocode. Say we have an array A[1..n]:
+- sort(A[1..n]) is our main problem: sorting n elements
+- sort(A[1..n-1]) is our smaller subproblem: sorting n-1 elements
 
-sort(A[1..n]) is the given problem, sorts n elements of A.
-sort(A[1..n-1]) sorts the first n-1 elements of A. 
+Here's where the magic of recursive thinking comes in: imagine we've already solved the smaller problem (sorting n-1 elements). Don't worry about how - just assume it's done! Now our big problem becomes much simpler: "How do we insert one more number into an already sorted array?" This is exactly what insertion sort does!
 
-The technique of recursion now asks whether we can reuse the solution of the subproblem sort(A[1..n-1]) to derive solution for sort(A[1..n]). In other words, how can we place element A[n] in the sorted A[1..n-1]? Think about this for a moment. This answer leads to what is popularly known as insertion sorting. 
+Remember: The key to understanding recursion is being comfortable with this "assume the smaller problem is solved" thinking. It comes up again and again.
 
-One again, the idea is simple. Given a problem, can we construct it's solution derived from reusing the solution to the subproblems. A subproblem is nothing but the same problem applied to a smaller size of the input.
+## Common Patterns
+There are three main ways to break down problems recursively. You'll see these patterns everywhere:
 
+```
+1. Incremental: Break into (n-k) + k elements
+   - Usually k=1, like in our sorting example
+   - Example: Insertion sort
 
-How to split ? There are few inuitive ways (n): 
-+ incremental ->  subproblem(n - k) + residue(k). Usually k = 1. 
-+ divide -> subproblem(n/k). Not all subproblems have to be equal in size though.
-+ partition -> subproblem(k-1) + residue(1) + subproblem(n-k). Residue in this case is referred to as a pivot. There can be multiple such pivots.
+2. Divide: Split into n/k sized pieces
+   - Pieces don't need to be exactly equal
+   - Example: Merge sort splits into n/2 pieces
+
+3. Partition: Split into three parts
+   - left_part(k-1) + pivot(1) + right_part(n-k)
+   - Example: Quicksort uses a pivot to divide and conquer
+```
+
+The beauty of recursion is that once you recognize these patterns, you'll start seeing them everywhere in problem-solving!
