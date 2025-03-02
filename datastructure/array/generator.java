@@ -28,6 +28,22 @@ public class generator {
         }
         return arr;
     }
+
+    static void defaultIntArray(int size) {
+        //values defaults to 0;
+        int[] a = new int[size];
+
+        // [0, 0, 0, 0, 0, 0, 0, 0, 0, 0...]
+        System.out.println(Arrays.toString(a));
+    }
+
+    static void defaultIntegerArray(int size) {
+        //defaults to null values;
+        Integer[] a = new Integer[size];
+
+        // [null, null, null, null, null....]
+        System.out.println(Arrays.toString(a));
+    }
     
     public static void main(String[] args) {
         System.out.println(Arrays.toString(randomIntegers(20)));

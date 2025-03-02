@@ -4,11 +4,11 @@
 
 a. Components:
   As with any datastructure there two things to consider when it comes to components -
-  1. bounded, contiguous memory 
+  1. memory.
   2. elements
 
 b. Relations:
-  1. memory is contiguous.
+  1. memory is contiguous and bounded. 
   2. array as a datastructure doesn't employ relations between elements to position them.
 
 
