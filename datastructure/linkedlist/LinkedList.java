@@ -38,7 +38,7 @@ public class LinkedList<T> {
 
     public void prepend(T e) {
         Node<T> n = new Node<>();
-        n.val = e;
+        n.key = e;
         prepend(n);
     }
 
@@ -46,7 +46,7 @@ public class LinkedList<T> {
     // O(1)
     public T deleteHead() {
         if (isEmpty()) return null;
-        T e = head.pointsTo.val;
+        T e = head.pointsTo.key;
         head.pointsTo = head.pointsTo.next;
         size--;
         return e;
@@ -65,7 +65,7 @@ public class LinkedList<T> {
             prev = curr;
             curr = curr.next;
         }
-        T e = curr.val;
+        T e = curr.key;
         prev.next = null;
         size--;
         return e;
@@ -84,7 +84,7 @@ class Correctness_LL {
         int count = 0;
         while(count<10) {
             Node<Integer> e = new Node<>();
-            e.val = count;
+            e.key = count;
             ll.append(e);
             count++;
         }
