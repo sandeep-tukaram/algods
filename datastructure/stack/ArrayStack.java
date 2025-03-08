@@ -35,14 +35,16 @@ public class ArrayStack<E> implements api<E> {
     }
 
     @Override
-    public boolean isFull() {
-        return top == arr.length - 1;
-    }
-
-    @Override
     public E top() {
         if (isEmpty()) throw new EmptyStackException();
         return arr[top];
     }
-    
+
+
+    // Array is preallocated and fixed size. Because of which, full() is a behavior exhibited
+    //  by the array implementation of the list.
+    public boolean isFull() {
+        return top == arr.length - 1;
+    }
+
 }

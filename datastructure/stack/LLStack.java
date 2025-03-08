@@ -25,12 +25,6 @@ public class LLStack<E> implements api<E> {
         return ll.isEmpty();
     }
 
-    // Dynamic node allocation. Unlike array implementation there is no concept of maximum.
-    @Override
-    public boolean isFull() {
-        throw new UnsupportedOperationException("Unimplemented method 'isFull'");
-    }
-
     // O(1)
     @Override
     public E top() {
@@ -38,4 +32,12 @@ public class LLStack<E> implements api<E> {
         ll.prepend(e);
         return e;
     }
+
+
+    // NOTES
+    // Dynamic node allocation. Unlike array implementation there is no concept of maximum.
+    // public boolean isFull() {
+    //     throw new UnsupportedOperationException("Unimplemented method 'isFull'");
+    // }
+
 }
