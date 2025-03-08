@@ -1,5 +1,5 @@
 # Data Structures 
-I'm really not sure whether there is a standard definition for datastructure. I take a system's view.  
+I'm really not sure whether there is a standard definition for datastructure. I take a system's view and employ first principles thinking.
 
 --- 
 ## System's View - Structure and Behavior
@@ -12,29 +12,47 @@ Every system has a structure which gives rise to a latent behavior. Events supre
 For each datastructure, I will study the structure. From the structure I will try and understand the behavior of the datastructure. There is generic framework we can work with to examine structure and behavior. 
 
 ## Structure 
-Struture is made up of components, relations between the components, and goals intended. 
-
-In case of a datastructure:
+In system's thining struture is made up of components, relations between the components, and goals intended. 
 
 ### Components
-A datastructure stores elements in memory locations. The simplest of the datastructure is a variable. In languages like java, variables stores primitive 
-element in stack memory. Likewise a reference in java points to an object stored in heap. 
-+ element(s)
-+ memory location(s)
+A datastructure stores elements in memory locations. Take the most simplest of this arrangement - a variable. A variable stores a value. In pseudocode notation, x is the variable and value1 is the value that x stores. This is for illustraion purposes only not representative of any programming language. 
+
+```
+    x = value1
+
+```
+
+To think in terms of a RAM model, x is the handle to memory location which stores value1. For an instruction to operate on this memory location using the handle x. For example, below instruction increments the value of x. We will assume the incremented value is written back to the same memory location to which x was earlier pointing to, it doesn't matter for the purpose of this discussion.
+
+```
+    x++;
+
+```
+
+Variable is useful for a single element. Imagine if we had to store a collection of elements. We definitely need a set of memory locations. And we assume each memory location can store a single element. The question that arise then is which element goes where? It can be random or have a scheme.  If we want to use a scheme, we need to think for what purpose and on what basis do we structure the scheme. These are fundamental questions one can think of when dealing with a problem to store a collection of elements. 
+
+To sum up two components make up the structure 
+1. memory locations
+2. elements
 
 ### Relations
-Relations help craft a scheme to determine the location an element needs to be stored at.
+Going back to system's thinking, we ask, is/are there Relations between the components? Since we have only two components when it comes to datastructure, the exhausitve list of relations include, with examples
++ relation between memory locations -> contiguous, links
++ relation between elements -> order relation
++ relation between element and memory locations -> placement scheme.
 
-Relations may exist
-+ among elements, ex. order relation.
-+ among memory locations - contiguous, links etc.
-+ between memory location and elements - hashing.
+
+### Relations between Memory locations
+We need a set of memory locations to store a collection of elements. We have already made an assumption that each memory location stores a single element only. Is there a relation between the memory locations ? Two variants of relations one usually finds 
++ contiguous locations
++ linked locations
+
 
 Datastructures incorporate relation when organizing elements.
 
 
 ### Function/Goal
-In the context of programming, the goal of a program is to perform a computational task correct and efficient. Designing correct implpy error handling. Efficiency in time and space technically translate to CPU(time) and Memory(space) usage. Datastructures are modelled as objects with operations. The goal in the context of datastructure is to provide optimial operations to performan computationl task efficiently and correctly. It is not possible to optimize all operations required by a program. There is trade-off usually. As a developer these tradeoff are important when it comes to select the right datastructure for a program. 
+In the context of programming, the goal of a program is to perform a computational task correct and efficient. Designing correct imply error handling. Efficiency in time and space technically translate to CPU(time) and Memory(space) usage. Datastructures are modelled as objects with operations. The goal in the context of datastructure is to provide optimial operations to performan computationl task efficiently and correctly. It is not possible to optimize all operations required by a program. There is trade-off usually. As a developer these tradeoff are important when it comes to select the right datastructure for a program. 
 
 ---
 
