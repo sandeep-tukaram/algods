@@ -1,16 +1,22 @@
 package datastructure.array;
+
 import java.util.Arrays;
 import java.util.Random;
 
 public class generator {
 
-    public static Integer[] randomIntegers(int size) {
-        Random rand = new Random();
-        Integer[] arr = new Integer[size];
-        for (Integer i = 0; i < size; i++) {
-            arr[i] = rand.nextInt(1000000);
+    public static Integer[] randomIntegers(int size, int range) {
+        Integer[] array = new Integer[size];
+        Random random = new Random();
+
+        for (int i = 0; i < size; i++) {
+            array[i] = random.nextInt(range);
         }
-        return arr;
+        return array;
+    }
+
+    public static Integer[] randomIntegers(int size) {
+        return randomIntegers(size, 10000);
     }
 
     public static Integer[] sortedIntegers(int size) {

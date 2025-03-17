@@ -1,3 +1,5 @@
+package problems.sorting;
+
 public class partition {
 
     // Design technique -> two pointer, one pivot.

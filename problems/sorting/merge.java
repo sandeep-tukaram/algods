@@ -1,11 +1,12 @@
+package problems.sorting;
+
 import java.util.Arrays;
 
 public class merge {
 
     // Design technique -> two-pointer approach.
-    // Assumes A[start, mid] and A[mid + 1, end] are two contiguous sorted arrays.
-    // O(n) time.
-    // Left + Right array  = O(n) space.
+    // T(n) = O(n)
+    // S(n) = Left O(n/2) + Right O(n/2)  = O(n)
     static <T extends Comparable<T>> void sortedArrays(T[] A, int start, int mid, int end) {
     
         // copy A[start, mid] into Left

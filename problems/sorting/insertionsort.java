@@ -1,3 +1,5 @@
+package problems.sorting;
+
 import java.util.Arrays;
 
 
@@ -12,16 +14,14 @@ import java.util.Arrays;
     T(n) = O(n^2);
 */ 
 public class insertionsort {
-
-
-    static <T extends Comparable<T>> void sort(T[] A, int n) {
+    static <T extends Comparable<T>> void recursive(T[] A, int n) {
         // base
         if (n == 0) {
             return;
         }
 
         // recursive
-        sort(A, n - 1);
+        recursive(A, n - 1);
         int i = n - 1;
         T key = A[n];
         while (i >= 0 && A[i].compareTo(key) > 0) {
@@ -33,7 +33,7 @@ public class insertionsort {
 
     public static void main(String[] args) {
         Integer[] A = {2, 3, 1, 4};
-        sort(A, A.length - 1);        // O(n^2), in-place
+        recursive(A, A.length - 1);        // O(n^2), in-place
         System.out.println(Arrays.toString(A));
     }
 }

@@ -1,3 +1,5 @@
+package problems.sorting;
+
 import datastructure.array.generator;
 
 public class MergeSortBenchmark {
