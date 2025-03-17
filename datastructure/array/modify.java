@@ -2,6 +2,8 @@ package datastructure.array;
 
 import java.util.Arrays;
 
+// modify affects underlying element order 
+// upate - search and set, doesn't affect the order
 public class modify<T> {
 
     T[] A; 
