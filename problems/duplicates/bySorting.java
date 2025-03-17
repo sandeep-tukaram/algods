@@ -21,7 +21,7 @@ public class bySorting {
     }
 
     // T(n) = O(nlgn) + O(n) = O(nlgn) worst case
-    // S(n) = O(n), better use heapsort O(1) (inplace)
+    // S(n) = O(n)
     static <T extends Comparable<T>>  boolean mergesort_check(T[] arr) {
         // T(n) = O(nlgn), S(n) = O(n)
         quicksort.sort(arr, 0, arr.length-1);
@@ -32,6 +32,10 @@ public class bySorting {
         }
         return false;
     }
+
+    // using heapsort 
+    // T(n) = O(n) constructing heap +  O(nlgn) comparing n elements by polling min and comapring with previous min.
+    // S(n) = O(1) (inplace sorting)
 
     public static void main(String[] args) {
         Integer[] arr = generator.randomIntegers(10, 100);
