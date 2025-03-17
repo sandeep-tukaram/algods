@@ -21,7 +21,7 @@ public class bySorting {
     }
 
     // T(n) = O(nlgn) + O(n) = O(nlgn) worst case
-    // S(n) = O(n), additional space
+    // S(n) = O(n), better use hashtable
     static <T extends Comparable<T>>  boolean mergesort_check(T[] arr) {
         // T(n) = O(nlgn), S(n) = O(n)
         quicksort.sort(arr, 0, arr.length-1);
