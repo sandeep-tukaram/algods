@@ -2,7 +2,7 @@ package datastructure.array;
 
 import java.util.Arrays;
 
-public class update<T> {
+public class modify<T> {
 
     T[] A; 
 
@@ -18,7 +18,7 @@ public class update<T> {
 
 class Correctness_API {
     public static void main(String[] args) {
-        update<Integer> a1 = new update<Integer>();
+        modify<Integer> a1 = new modify<Integer>();
         a1.A = generator.reverseSortedIntegers(10);
         a1.insert(1, 3);
         System.out.println(Arrays.toString(a1.A));
