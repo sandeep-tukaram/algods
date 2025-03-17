@@ -28,9 +28,11 @@ public class shifter {
         int m = (j + i)/2;
 
         if (k > 0) {
+            // shift right
             division(A, m+1, j, k);
             division(A, i, m, k);    
         } else if (k < 0) {
+            // shift left
             division(A, i, m, k);    
             division(A, m+1, j, k);
         }
