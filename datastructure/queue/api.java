@@ -9,5 +9,4 @@ public interface api<E> {
     // So full() is and implementation concept.  
     // Not deleted for reference purposes.
     // boolean isFull();    
-
 }
