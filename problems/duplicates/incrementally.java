@@ -24,7 +24,6 @@ public class incrementally {
     }
 
 
-
     public static void main(String[] args) {
         Integer[] arr = generator.randomIntegers(10, 20);
         System.out.println(Arrays.toString(arr));
