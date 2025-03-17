@@ -11,10 +11,10 @@ public class LinkedList<T> {
 
     // O(n)
     void append(Node<T> e) {
-        Node<T> curr = head.pointsTo;
+        Node<T> curr = head.to;
 
         if (isEmpty()) {
-            head.pointsTo = e;
+            head.to = e;
             size++;
             return;
         }
@@ -30,8 +30,8 @@ public class LinkedList<T> {
 
     // O(1)
     void prepend(Node<T> e) {
-        Node<T> curr = head.pointsTo;
-        head.pointsTo=e;
+        Node<T> curr = head.to;
+        head.to=e;
         e.next=curr;
         size++;
     }
@@ -46,19 +46,19 @@ public class LinkedList<T> {
     // O(1)
     public T deleteHead() {
         if (isEmpty()) return null;
-        T e = head.pointsTo.key;
-        head.pointsTo = head.pointsTo.next;
+        T e = head.to.key;
+        head.to = head.to.next;
         size--;
         return e;
     }
 
     // O(n)
     public T deleteTail() {
-        Node<T> curr = head.pointsTo;
+        Node<T> curr = head.to;
 
         if (isEmpty()) return null;
 
-        Node<T> prev = head.pointsTo;
+        Node<T> prev = head.to;
 
         //locate tail O(n)
         while(curr.next != null) {
