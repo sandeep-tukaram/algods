@@ -1,6 +1,6 @@
 package datastructure.linkedlist;
 
 // Pointer
-public class Edge<T> {
+public class Pointer<T> {
     T pointsTo;
 }

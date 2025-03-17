@@ -1,7 +1,7 @@
 package datastructure.linkedlist;
 
 public class LinkedList<T> {
-    Edge<Node<T>> head = new Edge<>();      // single pointer implementation
+    Pointer<Node<T>> head = new Pointer<>();      // single pointer implementation
     int size = 0;
 
     // O(1)

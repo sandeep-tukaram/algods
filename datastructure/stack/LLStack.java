@@ -6,13 +6,15 @@ public class LLStack<E> implements api<E> {
 
     private LinkedList<E> ll = new LinkedList<>();
 
-    // top at head. O(1)
+    // insert new head. 
+    // T(n) = O(1)
     @Override
     public void push(E e) {
         ll.prepend(e);
     }
 
-    // O(1)
+    // delete head
+    // T(n) = O(1)
     @Override
     public E pop() {
         return ll.deleteHead();
