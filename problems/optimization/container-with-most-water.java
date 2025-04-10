@@ -124,7 +124,7 @@ class maxContainer {
     // we have a different structure/model to work with. And it is a model that helps further optimize 
     // - not apparent at first, I write this post lot of thinking. 
     // 
-    // First optimization 
+    // First optimization - farthest greater Height (Expand starting from i)
     // What is the extra effort here. Say we have an increasing set of heights. 
     // for i = 0, H[j] > H[i] for all j > i. so min(H[j], H[i]) = H[i] for all values of i, j since 
     // its increasing in order. So container size reduces to the formula 
@@ -144,6 +144,8 @@ class maxContainer {
     //      We use two-pointers here. Let's call it two-pointer approach.
     //  c) Following b), we do that for all i's.  
     //       Complexity is still O(n^2)
+    //
+    //  Second optimization - farthest greater Height (Contract starting from the ends)
     //  d) However, we notice something.  For every i, we start from the left = 0 and right = n-1 and 
     //      move the pointers inwards. If we call this move contraction (instead of scan). It's n contractions. 
     //  e) Can we optimize on the number of contractions ? 
