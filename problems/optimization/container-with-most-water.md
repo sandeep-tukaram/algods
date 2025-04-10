@@ -33,8 +33,8 @@ int fullScan(int[] height) {
 
     for (int i = 0; i < height.length; i++) {
         for (int j = 0; j < height.length; j++) {
-            max_container = 
-                    Math.max(max_container, 
+            max_container =
+                    Math.max(max_container,
                         Math.abs(j-i) * Math.min(height[j], height[i])
                     );
         }
@@ -50,7 +50,7 @@ Can we do better? Let's try a dynamic programming approach.
 
 ### The DP Approach Explained:
 
-1. We define a subproblem `C(i)` as the maximum container between indices 0 and i.
+1. We define a subproblem `C(i)` as the maximum container between indices 0 and i. It's prefix subproblem.
 2. Base case: `C(0) = 0` (a single height can't form a container)
 3. Recursive relation:
    ```
@@ -63,7 +63,7 @@ Can we do better? Let's try a dynamic programming approach.
 In this approach, we view the problem as finding the maximum container for each ending position, and we use memoization to avoid redundant calculations.
 
 ### Analysis:
-- **Time Complexity**: 
+- **Time Complexity**:
   - The recursive relation can be expressed as: T(i) = T(i-1) + O(i)
   - We memoize T(i) to avoid repeated calculations
   - When fully expanded: T(n) = O(n) + O(n-1) + ... + O(1) = O(n²)
@@ -92,7 +92,7 @@ int dp(int[] height, int pivot) {
     // max container with the pivot
     int max_container_pivot = 0;
     for(int j = 0; j < pivot; j++) {
-        max_container_pivot = Math.max(max_container_pivot, 
+        max_container_pivot = Math.max(max_container_pivot,
                     (pivot-j) * Math.min(height[pivot], height[j])
                 );
     }
@@ -186,4 +186,3 @@ This optimization journey shows the importance of:
 3. Finding ways to make greedy choices that don't sacrifice the optimal solution
 
 The container with most water problem is a classic example of how algorithmic thinking can transform an inefficient solution into an elegant and efficient one.
-
