@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The "Container With Most Water" is a classic algorithmic problem that asks us to find the maximum amount of water a container can hold, given an array of heights. Each element in the array represents a height of a vertical line, and the width between any two lines is their index difference.
+The "Container With Most Water" is a classic algorithmic problem that asks us to find the maximum amount of water a container can hold, given an array of heights. Each element in the array represents a vertical height, and the width between any two heights is their index difference.
 
 In mathematical terms, we need to find two indices `i` and `j` that maximize the area calculated as:
 ```
@@ -13,9 +13,9 @@ The problem tests our ability to optimize from a simple brute force approach to 
 
 ## Approach 1: Repeated Full Scan (Brute Force)
 
-The most straightforward approach is to check all possible pairs of lines and calculate the area they form. This is a classic brute force approach where we:
+The most straightforward approach is to check all possible pairs of heights and calculate the area they form. This is a classic brute force approach where we:
 
-1. Iterate through all pairs of lines (i, j)
+1. Iterate through all pairs of heights (i, j)
 2. Calculate the area of the container formed by each pair
 3. Keep track of the maximum area found
 
@@ -51,11 +51,11 @@ Can we do better? Let's try a dynamic programming approach.
 ### The DP Approach Explained:
 
 1. We define a subproblem `C(i)` as the maximum container between indices 0 and i.
-2. Base case: `C(0) = 0` (a single line can't form a container)
+2. Base case: `C(0) = 0` (a single height can't form a container)
 3. Recursive relation:
    ```
    C(i) = Max {
-            C(i-1),                              // Max container without using the current line
+            C(i-1),                              // Max container without using the current height
             max((i-j) * min(height[i], height[j])) for all j < i  // Max container with the current line
           }
    ```
@@ -166,7 +166,7 @@ Let's compare our three approaches:
 
 | Approach | Time Complexity | Space Complexity | Description |
 |----------|----------------|------------------|-------------|
-| Repeated Full Scan (Brute Force) | O(n²) | O(1) | Check all possible pairs of lines |
+| Repeated Full Scan (Brute Force) | O(n²) | O(1) | Check all possible pairs of heights |
 | Dynamic Programming | O(n²) | O(n) | Use memoization to avoid redundant calculations |
 | Two Pointer | O(n) | O(1) | Strategically move pointers to find the optimal container |
 
