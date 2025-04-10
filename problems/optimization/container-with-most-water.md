@@ -13,7 +13,19 @@ The problem tests our ability to optimize from a simple brute force approach to 
 
 ## Approach 1: Brute Force
 
-The most straightforward approach is to check all possible pairs of lines and calculate the area they form:
+The most straightforward approach is to check all possible pairs of lines and calculate the area they form. This is a classic brute force approach where we:
+
+1. Iterate through all pairs of lines (i, j)
+2. Calculate the area of the container formed by each pair
+3. Keep track of the maximum area found
+
+### Analysis:
+- **Time Complexity**: O(n²) - We have n choices for the left boundary and n choices for the right boundary, resulting in n² operations.
+- **Space Complexity**: O(1) - We only need a single variable to track the maximum container.
+
+This solution is simple to understand but inefficient for large inputs. It times out on LeetCode for larger test cases.
+
+### Implementation:
 
 ```java
 int fullScan(int[] height) {
@@ -32,15 +44,31 @@ int fullScan(int[] height) {
 }
 ```
 
-### Analysis:
-- **Time Complexity**: O(n²) - We have n choices for the left boundary and n choices for the right boundary, resulting in n² operations.
-- **Space Complexity**: O(1) - We only need a single variable to track the maximum container.
-
-This solution is simple to understand but inefficient for large inputs. It times out on LeetCode for larger test cases.
-
 ## Approach 2: Dynamic Programming
 
-Can we do better? Let's try a dynamic programming approach:
+Can we do better? Let's try a dynamic programming approach.
+
+### The DP Approach Explained:
+
+1. We define a subproblem `C(i)` as the maximum container between indices 0 and i.
+2. Base case: `C(0) = 0` (a single line can't form a container)
+3. Recursive relation:
+   ```
+   C(i) = Max {
+            C(i-1),                              // Max container without using the current line
+            max((i-j) * min(height[i], height[j])) for all j < i  // Max container with the current line
+          }
+   ```
+
+In this approach, we view the problem as finding the maximum container for each ending position, and we use memoization to avoid redundant calculations.
+
+### Analysis:
+- **Time Complexity**: O(n²) - For each pivot, we need to check all previous positions.
+- **Space Complexity**: O(n) - We store solutions to n subproblems.
+
+Despite using memoization, this approach still has quadratic time complexity and doesn't provide the improvement we hoped for. It also times out on LeetCode for larger test cases.
+
+### Implementation:
 
 ```java
 int[] memoize;
@@ -67,24 +95,6 @@ int dp(int[] height, int pivot) {
 }
 ```
 
-### The DP Approach Explained:
-
-1. We define a subproblem `C(i)` as the maximum container between indices 0 and i.
-2. Base case: `C(0) = 0` (a single line can't form a container)
-3. Recursive relation:
-   ```
-   C(i) = Max {
-            C(i-1),                              // Max container without using the current line
-            max((i-j) * min(height[i], height[j])) for all j < i  // Max container with the current line
-          }
-   ```
-
-### Analysis:
-- **Time Complexity**: O(n²) - For each pivot, we need to check all previous positions.
-- **Space Complexity**: O(n) - We store solutions to n subproblems.
-
-Despite using memoization, this approach still has quadratic time complexity and doesn't provide the improvement we hoped for. It also times out on LeetCode for larger test cases.
-
 ## The Optimization Journey
 
 Both our previous approaches have O(n²) time complexity. The key issue is that we're doing repeated scans:
@@ -105,7 +115,29 @@ These two factors work against each other - increasing the width often means acc
 
 ## Approach 3: Two Pointer Technique
 
+### The Two Pointer Approach Explained:
+
+1. Start with the widest possible container (left=0, right=n-1).
+2. Calculate the area of this container.
+3. To find a potentially larger container, we need to increase the minimum height.
+4. Move the pointer that points to the smaller height inward:
+   - If height[left] <= height[right], move left pointer to the right.
+   - Otherwise, move right pointer to the left.
+5. Continue this process until the pointers meet.
+
+### The Insight Behind the Optimization
+
+The key insight is realizing that when we move a pointer inward, the width of the container decreases. For the area to increase, the minimum height must increase by enough to compensate for the reduced width.
+
+By always moving the pointer that points to the smaller height, we maximize our chances of finding a larger container. If we were to move the pointer with the larger height, the minimum height (and thus the container's area) would either stay the same or decrease, which isn't helpful.
+
+### Analysis:
+- **Time Complexity**: O(n) - We process each element at most once.
+- **Space Complexity**: O(1) - We only use two pointers and a variable to track the maximum area.
+
 The two-pointer approach offers an elegant solution with linear time complexity:
+
+### Implementation:
 
 ```java
 int twoPointer(int[] heights) {
@@ -127,26 +159,6 @@ int twoPointer(int[] heights) {
     return maxContainer;
 }
 ```
-
-### The Two Pointer Approach Explained:
-
-1. Start with the widest possible container (left=0, right=n-1).
-2. Calculate the area of this container.
-3. To find a potentially larger container, we need to increase the minimum height.
-4. Move the pointer that points to the smaller height inward:
-   - If height[left] <= height[right], move left pointer to the right.
-   - Otherwise, move right pointer to the left.
-5. Continue this process until the pointers meet.
-
-### The Insight Behind the Optimization
-
-The key insight is realizing that when we move a pointer inward, the width of the container decreases. For the area to increase, the minimum height must increase by enough to compensate for the reduced width.
-
-By always moving the pointer that points to the smaller height, we maximize our chances of finding a larger container. If we were to move the pointer with the larger height, the minimum height (and thus the container's area) would either stay the same or decrease, which isn't helpful.
-
-### Analysis:
-- **Time Complexity**: O(n) - We process each element at most once.
-- **Space Complexity**: O(1) - We only use two pointers and a variable to track the maximum area.
 
 ## Conclusion: Comparing the Approaches
 
