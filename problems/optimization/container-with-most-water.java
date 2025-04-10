@@ -35,7 +35,8 @@ class maxContainer {
     }
 
 
-    /*  Approach 2
+    /*  Approach 2 - Recursion.
+        Flawed Approach:
         1. DP (recursion + memoization)
         2. prefix subproblem: C(i) -> Maximum container between o and i
         3. C(0) = 0
@@ -55,10 +56,12 @@ class maxContainer {
             c) T(n) = O(n) + O(n-1) + ... + O(1) = O(n^2);
             Space
             a) S(n) = O(n) to store values of C(i) for 0<= i < n
-    */
-    /*
+
+        Correct Approach:
         While the above approach looks great, it's flawed. There is no need for memoization. 
         The recursion is linear. Have commented out the memoization code.
+        T(n) = O(n^2)
+        S(n) = O(1)
     */
     int[] memoize;
     int dp(int[] height, int pivot) {
