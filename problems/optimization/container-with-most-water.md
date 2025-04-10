@@ -20,8 +20,8 @@ The most straightforward approach is to check all possible pairs of heights and 
 3. Keep track of the maximum area found
 
 ### Analysis:
-- **Time Complexity**: O(n²) - We have n choices for the left boundary and n choices for the right boundary, resulting in n² operations.
-- **Space Complexity**: O(1) - We only need a single variable to track the maximum container.
+- **Time Complexity**: T(n) = n (pivots) * n (scans) = O(n²) - For every i (pivot), we scan left and right to find the container with i column fixed. This results in n pivots with n scans each.
+- **Space Complexity**: S(n) = O(1) - We only need a single variable to track the maximum container.
 
 This solution is simple to understand but inefficient for large inputs. It times out on LeetCode for larger test cases.
 
@@ -63,10 +63,18 @@ Can we do better? Let's try a dynamic programming approach.
 In this approach, we view the problem as finding the maximum container for each ending position, and we use memoization to avoid redundant calculations.
 
 ### Analysis:
-- **Time Complexity**: O(n²) - For each pivot, we need to check all previous positions.
-- **Space Complexity**: O(n) - We store solutions to n subproblems.
+- **Time Complexity**: 
+  - The recursive relation can be expressed as: T(i) = T(i-1) + O(i)
+  - We memoize T(i) to avoid repeated calculations
+  - When fully expanded: T(n) = O(n) + O(n-1) + ... + O(1) = O(n²)
+  - For every pivot, we scan from 0 to pivot, which results in n(n-1)/2 operations in total
+- **Space Complexity**: S(n) = O(n) - We need to store values of C(i) for 0 <= i < n in the memoization array
 
 Despite using memoization, this approach still has quadratic time complexity and doesn't provide the improvement we hoped for. It also times out on LeetCode for larger test cases.
+
+The primary reason both Full Scan and DP approaches have O(n²) time complexity is the repeated scans:
+  - In Full Scan: For every pivot, one full scan = n²
+  - In DP: For every pivot, 0 to pivot scan = n(n-1)/2
 
 ### Implementation:
 
