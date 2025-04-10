@@ -11,7 +11,7 @@ Area = min(height[i], height[j]) * (j - i)
 
 The problem tests our ability to optimize from a simple brute force approach to an elegant linear time solution. Let's journey through three different approaches, from the most intuitive to the most optimized.
 
-## Approach 1: Brute Force
+## Approach 1: Repeated Full Scan (Brute Force)
 
 The most straightforward approach is to check all possible pairs of lines and calculate the area they form. This is a classic brute force approach where we:
 
@@ -98,7 +98,7 @@ int dp(int[] height, int pivot) {
 ## The Optimization Journey
 
 Both our previous approaches have O(n²) time complexity. The key issue is that we're doing repeated scans:
-- In the brute force, we scan all pairs.
+- In the Repeated Full Scan (Brute Force), we scan all pairs.
 - In the DP approach, for each position i, we scan all positions from 0 to i-1.
 
 Can we avoid these repeated scans? Let's think about the problem differently.
@@ -166,7 +166,7 @@ Let's compare our three approaches:
 
 | Approach | Time Complexity | Space Complexity | Description |
 |----------|----------------|------------------|-------------|
-| Brute Force | O(n²) | O(1) | Check all possible pairs of lines |
+| Repeated Full Scan (Brute Force) | O(n²) | O(1) | Check all possible pairs of lines |
 | Dynamic Programming | O(n²) | O(n) | Use memoization to avoid redundant calculations |
 | Two Pointer | O(n) | O(1) | Strategically move pointers to find the optimal container |
 
