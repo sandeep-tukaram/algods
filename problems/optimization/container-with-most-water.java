@@ -56,6 +56,10 @@ class maxContainer {
             Space
             a) S(n) = O(n) to store values of C(i) for 0<= i < n
     */
+    /*
+        While the above approach looks great, it's flawed. There is no need for memoization. 
+        The recursion is linear. Have commented out the memoization code.
+    */
     int[] memoize;
     int dp(int[] height, int pivot) {
         // base
@@ -63,8 +67,11 @@ class maxContainer {
             return 0;
         }
 
-        // use memoization
-        if (memoize[pivot] != 0) return memoize[pivot];
+        // use memoization (Wrong) - kept for the reference purposes 
+        // if (memoize[pivot] != 0) {
+        //     System.out.println("Memoized return - " + pivot);
+        //     return memoize[pivot];
+        // }
 
         // max container with the pivot
         int max_container_pivot = 0;
@@ -74,11 +81,13 @@ class maxContainer {
                     );
         }
 
-        // recursive relation
-        memoize[pivot] = Math.max(max_container_pivot, dp(height, pivot-1));
-        return memoize[pivot];
-    }
+        // memoize (wrong) 
+        // memoize[pivot] = Math.max(max_container_pivot, dp(height, pivot-1));
+        // return memoize[pivot];
 
+        // recursive relation
+        return Math.max(max_container_pivot, dp(height, pivot-1));
+    }
 
     // DP and Full scan both clock T(n) = O(n^2). In fact DP uses additonal space, S(n) = O(n)
     // In either of the cases, T(n) is O(n^2) because of the repeated scans. 
