@@ -2,3 +2,4 @@
 
 Below is a list of basic computational problems one finds explanations in popular algorithm textbooks 
 + [Sorting](problems/sorting/docs/README.md)
++ [Optimization](problems/optimization/README.md)
