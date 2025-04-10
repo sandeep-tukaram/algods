@@ -44,50 +44,67 @@ int fullScan(int[] height) {
 }
 ```
 
-## Approach 2: Dynamic Programming
+## Approach 2: Recursive Solution
 
-Can we do better? Let's try a dynamic programming approach.
+Can we do better? Let's explore a recursive approach to this problem.
 
-### The DP Approach Explained:
+### Initially Attempted DP Approach (Flawed)
 
-1. We define a subproblem `C(i)` as the maximum container between indices 0 and i. It's prefix subproblem.
+Initially, we might think this is a good candidate for dynamic programming:
+
+1. We define a subproblem `C(i)` as the maximum container between indices 0 and i (a prefix subproblem)
 2. Base case: `C(0) = 0` (a single height can't form a container)
 3. Recursive relation:
    ```
    C(i) = Max {
             C(i-1),                              // Max container without using the current height
-            max((i-j) * min(height[i], height[j])) for all j < i  // Max container with the current line
+            max((i-j) * min(height[i], height[j])) for all j < i  // Max container with the current height
           }
    ```
 
-In this approach, we view the problem as finding the maximum container for each ending position, and we use memoization to avoid redundant calculations.
+In this approach, we view the problem as finding the maximum container for each ending position, and we initially thought memoization would help avoid redundant calculations.
 
-### Analysis:
+The analysis for this approach would be:
 - **Time Complexity**:
   - The recursive relation can be expressed as: T(i) = T(i-1) + O(i)
-  - We memoize T(i) to avoid repeated calculations
+  - Memoizing T(i) to avoid repeated calculations
   - When fully expanded: T(n) = O(n) + O(n-1) + ... + O(1) = O(n²)
-  - For every pivot, we scan from 0 to pivot, which results in n(n-1)/2 operations in total
-- **Space Complexity**: S(n) = O(n) - We need to store values of C(i) for 0 <= i < n in the memoization array
+- **Space Complexity**: S(n) = O(n) - To store values of C(i) for 0 <= i < n in the memoization array
 
-Despite using memoization, this approach still has quadratic time complexity and doesn't provide the improvement we hoped for. It also times out on LeetCode for larger test cases.
+### Correct Recursive Solution
 
-The primary reason both Full Scan and DP approaches have O(n²) time complexity is the repeated scans:
+Upon further reflection, we realize that memoization isn't actually needed for this recursive approach. The recursion itself doesn't lead to overlapping subproblems that would benefit from memoization.
+
+Each recursive call to find the maximum container at position i independently computes:
+1. The maximum container with i as one endpoint (scanning all j < i)
+2. The maximum container from previous positions (recursive call for i-1)
+
+While this is still a recursive solution, it doesn't require the overhead of memoization.
+
+### Analysis:
+- **Time Complexity**: O(n²) - For every pivot, we scan from 0 to pivot, which results in n(n-1)/2 operations in total
+- **Space Complexity**: O(1) - Without memoization, we only need call stack space which is O(n) in worst case, but no additional data structures
+
+The recursive approach without memoization is cleaner but still has quadratic time complexity and times out on LeetCode for larger test cases.
+
+The primary reason both Full Scan and Recursive approaches have O(n²) time complexity is the repeated scans:
   - In Full Scan: For every pivot, one full scan = n²
-  - In DP: For every pivot, 0 to pivot scan = n(n-1)/2
+  - In Recursive: For every pivot, 0 to pivot scan = n(n-1)/2
 
 ### Implementation:
 
+Here's the implementation showing both versions - with memoization (commented out) and the correct recursive approach:
+
 ```java
-int[] memoize;
+int[] memoize; // Used in the flawed DP approach
 int dp(int[] height, int pivot) {
     // base
     if (pivot == 0) {
         return 0;
     }
 
-    // use memoization
-    if (memoize[pivot] != 0) return memoize[pivot];
+    // use memoization (commented out - flawed approach)
+    // if (memoize[pivot] != 0) return memoize[pivot];
 
     // max container with the pivot
     int max_container_pivot = 0;
@@ -97,9 +114,12 @@ int dp(int[] height, int pivot) {
                 );
     }
 
-    // recursive relation
-    memoize[pivot] = Math.max(max_container_pivot, dp(height, pivot-1));
-    return memoize[pivot];
+    // recursive relation - correct approach
+    return Math.max(max_container_pivot, dp(height, pivot-1));
+    
+    // memoization approach (commented out - flawed)
+    // memoize[pivot] = Math.max(max_container_pivot, dp(height, pivot-1));
+    // return memoize[pivot];
 }
 ```
 
@@ -107,7 +127,7 @@ int dp(int[] height, int pivot) {
 
 Both our previous approaches have O(n²) time complexity. The key issue is that we're doing repeated scans:
 - In the Repeated Full Scan (Brute Force), we scan all pairs.
-- In the DP approach, for each position i, we scan all positions from 0 to i-1.
+- In the Recursive approach, for each position i, we scan all positions from 0 to i-1.
 
 Can we avoid these repeated scans? Let's think about the problem differently.
 
@@ -175,7 +195,7 @@ Let's compare our three approaches:
 | Approach | Time Complexity | Space Complexity | Description |
 |----------|----------------|------------------|-------------|
 | Repeated Full Scan (Brute Force) | O(n²) | O(1) | Check all possible pairs of heights |
-| Dynamic Programming | O(n²) | O(n) | Use memoization to avoid redundant calculations |
+| Recursive Solution | O(n²) | O(1) | Recursive approach without memoization overhead |
 | Two Pointer | O(n) | O(1) | Strategically move pointers to find the optimal container |
 
 The two-pointer approach offers the best performance with linear time complexity and constant space complexity. It's a beautiful example of how a problem that initially seems to require examining all pairs (a quadratic operation) can be solved in linear time with the right insight.
